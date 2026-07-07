@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" role="img" aria-labelledby="title desc">
+  <title id="title">IJICS Vol. 17 Issue 3 cover</title>
+  <desc id="desc">A cover thumbnail for a past issue about human-centered AI.</desc>
+  <rect width="240" height="320" rx="10" fill="#f5f7f4"/>
+  <rect x="18" y="18" width="204" height="284" rx="8" fill="#ffffff" stroke="#d8ded5" stroke-width="2"/>
+  <rect x="18" y="18" width="204" height="70" rx="8" fill="#655a88"/>
+  <text x="34" y="62" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">IJICS</text>
+  <text x="34" y="120" fill="#b95642" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700">VOL. 17 / ISSUE 3</text>
+  <text x="34" y="152" fill="#15211f" font-family="Georgia, serif" font-size="27" font-weight="700">Human</text>
+  <text x="34" y="184" fill="#15211f" font-family="Georgia, serif" font-size="27" font-weight="700">centered AI</text>
+  <rect x="58" y="220" width="124" height="70" rx="35" fill="#e8f3f0" stroke="#2c7a73" stroke-width="6"/>
+  <circle cx="91" cy="255" r="12" fill="#15211f"/>
+  <circle cx="149" cy="255" r="12" fill="#15211f"/>
+  <path d="M90 232c16-20 44-20 60 0" stroke="#b95642" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M92 276c15 12 41 12 56 0" stroke="#655a88" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

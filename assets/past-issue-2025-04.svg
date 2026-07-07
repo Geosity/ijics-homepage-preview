@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" role="img" aria-labelledby="title desc">
+  <title id="title">IJICS Vol. 17 Issue 4 cover</title>
+  <desc id="desc">A cover thumbnail for a past issue about graph reasoning systems.</desc>
+  <rect width="240" height="320" rx="10" fill="#f5f7f4"/>
+  <rect x="18" y="18" width="204" height="284" rx="8" fill="#ffffff" stroke="#d8ded5" stroke-width="2"/>
+  <rect x="18" y="18" width="204" height="70" rx="8" fill="#2c7a73"/>
+  <text x="34" y="62" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">IJICS</text>
+  <text x="34" y="120" fill="#655a88" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700">VOL. 17 / ISSUE 4</text>
+  <text x="34" y="152" fill="#15211f" font-family="Georgia, serif" font-size="27" font-weight="700">Graph</text>
+  <text x="34" y="184" fill="#15211f" font-family="Georgia, serif" font-size="27" font-weight="700">reasoning</text>
+  <circle cx="70" cy="246" r="13" fill="#b95642"/>
+  <circle cx="125" cy="216" r="13" fill="#73823c"/>
+  <circle cx="166" cy="260" r="13" fill="#655a88"/>
+  <circle cx="104" cy="276" r="13" fill="#2c7a73"/>
+  <path d="M82 240l31-18M137 226l20 23M153 263l-36 10M96 268l-16-15" stroke="#15211f" stroke-width="5" stroke-linecap="round"/>
+</svg>

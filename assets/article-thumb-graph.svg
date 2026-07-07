@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Graph reasoning thumbnail</title>
+  <desc id="desc">Square thumbnail with connected graph nodes for a reasoning article.</desc>
+  <rect width="160" height="160" rx="18" fill="#f0eef7"/>
+  <path d="M50 52l56 24M106 76l-22 42M50 52l34 66M84 118l42-28" stroke="#15211f" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="50" cy="52" r="18" fill="#2c7a73"/>
+  <circle cx="106" cy="76" r="18" fill="#b95642"/>
+  <circle cx="84" cy="118" r="18" fill="#655a88"/>
+  <circle cx="126" cy="90" r="14" fill="#73823c"/>
+</svg>

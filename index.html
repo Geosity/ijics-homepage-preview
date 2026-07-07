@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IJICS Homepage Preview</title>
+    <meta
+      name="description"
+      content="A homepage preview for IJICS showing article access, author information, journal information, policies, and contact paths."
+    />
+    <link rel="stylesheet" href="./styles.css?v=13" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#home" aria-label="IJICS home">
+          <img
+            class="brand-logo"
+            src="./assets/ijics-logo-lockup.png"
+            width="798"
+            height="128"
+            alt="The International Journal of Intelligent Control and Systems"
+          />
+        </a>
+        <div class="journal-meta" aria-label="Journal identifiers">
+          <span>ISSN 2040-0000</span>
+          <span>eISSN 2040-000X</span>
+        </div>
+      </div>
+
+      <div class="navigation-board">
+        <nav class="section-shortcuts" aria-label="Primary columns">
+          <a class="nav-home" href="#home">Home</a>
+          <details class="nav-menu">
+            <summary>About</summary>
+            <div class="nav-menu-panel">
+              <a href="#about">Aim &amp; Scope</a>
+              <a href="#policies">Open Access</a>
+              <a href="#about">Editorial Board</a>
+              <a href="#contact" data-section-link="Editors">Editorial Office</a>
+            </div>
+          </details>
+          <details class="nav-menu">
+            <summary>Browse</summary>
+            <div class="nav-menu-panel">
+              <a href="#articles">Forthcoming Issue</a>
+              <a href="#articles">Current Issue</a>
+              <a href="#articles">Journal Archive</a>
+            </div>
+          </details>
+        </nav>
+
+        <form class="nav-article-search" id="article-search" role="search">
+          <label for="articleQuery">Search articles</label>
+          <div class="nav-search-row">
+            <input
+              id="articleQuery"
+              type="search"
+              placeholder="Title, author, DOI, keyword"
+              autocomplete="off"
+            />
+            <select id="issueSelect" aria-label="Article collection">
+              <option value="">All articles</option>
+              <option value="forthcoming">Forthcoming Issue</option>
+              <option value="current">Current Issue</option>
+              <option value="archive">Journal Archive</option>
+            </select>
+            <button type="submit" aria-label="Search articles">Search</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="structure-sidebar" id="site-structure" aria-labelledby="structure-title">
+        <div class="structure-heading">
+          <p class="eyebrow">Quick Access</p>
+          <h2 id="structure-title">Role paths</h2>
+        </div>
+        <div class="map-workbench">
+          <div class="level-one" role="tablist" aria-label="Visitor role paths">
+            <button type="button" class="map-tab is-active" data-section="Authors" role="tab" aria-selected="true">For Authors</button>
+            <button type="button" class="map-tab" data-section="Reviewers" role="tab" aria-selected="false">Reviewers</button>
+            <button type="button" class="map-tab" data-section="Editors" role="tab" aria-selected="false">Editors</button>
+          </div>
+          <div class="level-two" id="levelTwo" aria-live="polite" hidden></div>
+          <div class="level-three" id="levelThree" aria-live="polite" hidden></div>
+        </div>
+      </aside>
+
+      <div class="content-flow">
+      <section class="home-band" id="home">
+        <div class="home-grid">
+          <section class="reader-panel" id="articles" aria-labelledby="reader-title">
+            <div class="feature-carousel" aria-label="Featured notices">
+              <div class="feature-track" id="featureTrack">
+                <article class="feature-slide feature-slide-editorial">
+                  <div>
+                    <p class="eyebrow">Vol. 18, Issue 2 · July 2026</p>
+                    <h1 id="reader-title">Editorial selection from the current issue</h1>
+                    <p>
+                      Latest issue articles are listed for quick scanning. The editorial panel
+                      highlights one article with context and a page preview.
+                    </p>
+                  </div>
+                  <a class="quiet-link" href="#article-detail">Open article page</a>
+                </article>
+
+                <article class="feature-slide feature-slide-cfp">
+                  <div>
+                    <p class="eyebrow">Call for papers · 30 September 2026</p>
+                    <h2>Trustworthy intelligent computing systems</h2>
+                    <p>
+                      Submissions are invited on robust AI systems, decision support,
+                      safety evaluation, and human-centered automation.
+                    </p>
+                  </div>
+                  <a class="quiet-link" href="#site-structure" data-section-link="Authors">Submission scope</a>
+                </article>
+
+                <article class="feature-slide feature-slide-special">
+                  <div>
+                    <p class="eyebrow">Special focus · 15 November 2026</p>
+                    <h2>Special focus: AI agents in industrial settings</h2>
+                    <p>
+                      We welcome empirical, systems, and review articles that connect
+                      intelligent agents with verifiable deployment evidence.
+                    </p>
+                  </div>
+                  <a class="quiet-link" href="#site-structure" data-section-link="Authors">Author guidance</a>
+                </article>
+              </div>
+            </div>
+
+            <div class="issue-switcher browse-strip" aria-label="Browse issue shortcuts">
+              <a href="#articles">Forthcoming Issue</a>
+              <div class="current-issue-tag" aria-label="Current issue">
+                <span>Current</span>
+                <strong>Vol. 18, Issue 2</strong>
+              </div>
+              <a href="#articles">Journal Archive</a>
+            </div>
+
+            <div class="current-issue-layout">
+              <div class="article-list" id="articleList" aria-live="polite">
+                <article class="article-card" data-search="adaptive trust calibration autonomous review systems chen doi 10.1234 ijics.2026.018201">
+                  <img src="./assets/article-thumb-trust.svg" alt="Trust calibration article thumbnail" />
+                  <div>
+                    <p class="type-label">Research article</p>
+                    <h2>Adaptive trust calibration in autonomous review systems</h2>
+                    <p>Y. Chen, A. Ribeiro · Published July 2026</p>
+                  </div>
+                </article>
+
+                <article class="article-card" data-search="privacy preserving graph reasoning medical iot tanaka doi 10.1234 ijics.2026.018202">
+                  <img src="./assets/article-thumb-graph.svg" alt="Graph reasoning article thumbnail" />
+                  <div>
+                    <p class="type-label">Review article</p>
+                    <h2>Privacy-preserving graph reasoning for medical IoT</h2>
+                    <p>M. Tanaka, S. Malik · Published July 2026</p>
+                  </div>
+                </article>
+
+                <article class="article-card" data-search="benchmarking multimodal agents industrial inspection martinez doi 10.1234 ijics.2026.018203">
+                  <img src="./assets/article-thumb-agent.svg" alt="Industrial inspection article thumbnail" />
+                  <div>
+                    <p class="type-label">Short communication</p>
+                    <h2>Benchmarking multimodal agents for industrial inspection</h2>
+                    <p>L. Martinez, H. Singh · Published June 2026</p>
+                  </div>
+                </article>
+
+                <article class="article-card" data-search="robust decision support distribution shift nielsen doi 10.1234 ijics.2026.018204">
+                  <img src="./assets/article-thumb-trust.svg" alt="Decision support article thumbnail" />
+                  <div>
+                    <p class="type-label">Research article</p>
+                    <h2>Robust decision support under distribution shift</h2>
+                    <p>K. Nielsen, P. Duarte · Published June 2026</p>
+                  </div>
+                </article>
+
+                <article class="article-card" data-search="explainable controllers edge robotics ibrahim doi 10.1234 ijics.2026.018205">
+                  <img src="./assets/article-thumb-agent.svg" alt="Edge robotics article thumbnail" />
+                  <div>
+                    <p class="type-label">System report</p>
+                    <h2>Explainable controllers for edge robotics</h2>
+                    <p>N. Ibrahim, R. Cho · Published June 2026</p>
+                  </div>
+                </article>
+              </div>
+
+              <article class="current-editorial" id="article-detail" aria-labelledby="article-detail-title">
+                <figure class="article-preview">
+                  <img src="./assets/article-preview.svg" alt="Featured IJICS article page preview" />
+                </figure>
+                <div class="editorial-copy">
+                  <p class="eyebrow">Editorial</p>
+                  <h2 id="article-detail-title">Adaptive trust calibration in autonomous review systems</h2>
+                  <p class="article-byline">Y. Chen, A. Ribeiro · Vol. 18, Issue 2 · Research article · July 2026</p>
+                  <p>
+                    The editorial introduces why this article matters in the current issue.
+                    Full DOI, citation export, PDF, and license actions belong on the article page.
+                  </p>
+                  <a class="editorial-link" href="#article-detail">Open article page</a>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="summary-band" aria-label="Homepage second screen">
+        <div class="updates-panel" aria-labelledby="updates-title">
+          <div class="updates-heading">
+            <div>
+              <p class="eyebrow">Announcements</p>
+              <h2 id="updates-title">Calls for papers and journal news</h2>
+            </div>
+            <a class="quiet-link" href="#articles">All announcements</a>
+          </div>
+          <div class="announcement-tools">
+            <form class="announcement-search" id="announcementsSearch" role="search">
+              <label for="announcementQuery">Search announcements</label>
+              <input id="announcementQuery" type="search" placeholder="Topic, deadline, issue, board" autocomplete="off" />
+            </form>
+            <div class="announcement-filters" aria-label="Announcement category">
+              <button type="button" class="is-active" data-announcement-filter="all" aria-pressed="true">All</button>
+              <button type="button" data-announcement-filter="cfp" aria-pressed="false">CFP</button>
+              <button type="button" data-announcement-filter="news" aria-pressed="false">News</button>
+            </div>
+          </div>
+          <div class="updates-grid" aria-label="Scrollable calls and news">
+            <article
+              class="update-card update-call"
+              data-category="cfp"
+              data-search="cfp call for papers trustworthy intelligent computing systems robust ai safety evaluation human centered automation deadline 30 september 2026"
+            >
+              <img src="./assets/update-cfp-trust.svg" alt="Trustworthy systems call thumbnail" />
+              <div>
+                <span class="update-label">CFP</span>
+                <h3>Trustworthy intelligent computing systems</h3>
+                <p>Topic: robust AI, safety evaluation, and human-centered automation.</p>
+                <strong>Deadline: 30 September 2026</strong>
+              </div>
+            </article>
+            <article
+              class="update-card update-call"
+              data-category="cfp"
+              data-search="cfp call for papers ai agents industrial inspection empirical systems deployment evidence decision support deadline 15 november 2026"
+            >
+              <img src="./assets/update-cfp-agents.svg" alt="Industrial AI agents call thumbnail" />
+              <div>
+                <span class="update-label">CFP</span>
+                <h3>AI agents in industrial inspection</h3>
+                <p>Topic: empirical systems, deployment evidence, and decision support.</p>
+                <strong>Deadline: 15 November 2026</strong>
+              </div>
+            </article>
+            <article
+              class="update-card update-news"
+              data-category="news"
+              data-search="news vol 18 issue 2 online current issue trust calibration graph reasoning multimodal agents published july 2026"
+            >
+              <img src="./assets/update-news-issue.svg" alt="Current issue news thumbnail" />
+              <div>
+                <span class="update-label">News</span>
+                <h3>Vol. 18, Issue 2 is now online</h3>
+                <p>The issue covers trust calibration, graph reasoning, and multimodal agents.</p>
+                <strong>Published July 2026</strong>
+              </div>
+            </article>
+            <article
+              class="update-card update-news"
+              data-category="news"
+              data-search="news editorial board information refreshed affiliations public roles update dates 2026 listing updated 3 july 2026"
+            >
+              <img src="./assets/update-news-board.svg" alt="Editorial board news thumbnail" />
+              <div>
+                <span class="update-label">News</span>
+                <h3>Editorial board information refreshed</h3>
+                <p>Affiliations, public roles, and update dates were reviewed for the 2026 listing.</p>
+                <strong>Updated 3 July 2026</strong>
+              </div>
+            </article>
+          </div>
+          <p class="announcements-empty" id="announcementEmpty" hidden>No announcements match this search.</p>
+        </div>
+        <div class="summary-grid">
+          <article class="summary-item" id="about">
+            <img class="summary-icon" src="./assets/summary-about.svg" alt="" aria-hidden="true" />
+            <p class="eyebrow">IJICS</p>
+            <h2>About this journal</h2>
+            <p>Full title, ISSN, website, editorial email, publisher or sponsor.</p>
+            <a href="#about">Open About</a>
+          </article>
+          <article class="summary-item" id="policies">
+            <img class="summary-icon" src="./assets/summary-policies.svg" alt="" aria-hidden="true" />
+            <p class="eyebrow">Policies</p>
+            <h2>Policies</h2>
+            <p>Publication ethics, reviewer duties, copyright, license, and anti-fraud notices.</p>
+            <a href="#site-structure" data-section-link="Reviewers">Open Policies</a>
+          </article>
+        </div>
+      </section>
+
+      </div>
+    </main>
+
+    <footer class="site-footer" id="contact" aria-label="Journal compliance information">
+      <div class="footer-compliance">
+        <p class="eyebrow">Journal compliance information</p>
+        <div class="identity-strip">
+          <span>The International Journal of Intelligent Control and Systems</span>
+          <span>IJICS</span>
+          <span>ISSN 2040-0000</span>
+          <span>Website: ijics.example.org</span>
+          <a href="mailto:editorial@ijics.example.org">editorial@ijics.example.org</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js?v=13"></script>
+  </body>
+</html>

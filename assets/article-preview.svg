@@ -1,0 +1,20 @@
+<svg width="760" height="460" viewBox="0 0 760 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">IJICS editorial preview</title>
+  <desc id="desc">A visual preview for the current issue editorial feature.</desc>
+  <rect width="760" height="460" rx="18" fill="#F7FAF6"/>
+  <rect x="42" y="38" width="676" height="384" rx="12" fill="#FFFFFF" stroke="#D8DED5" stroke-width="2"/>
+  <rect x="42" y="38" width="676" height="70" rx="12" fill="#14211F"/>
+  <text x="72" y="82" fill="#F6F8F4" font-family="Arial, sans-serif" font-size="22" font-weight="700">Current Issue Editorial</text>
+  <text x="72" y="148" fill="#2C7A73" font-family="Arial, sans-serif" font-size="14" font-weight="700">VOL. 18, ISSUE 2 / JULY 2026</text>
+  <text x="72" y="188" fill="#14211F" font-family="Georgia, serif" font-size="31" font-weight="700">Trust calibration in</text>
+  <text x="72" y="226" fill="#14211F" font-family="Georgia, serif" font-size="31" font-weight="700">autonomous review</text>
+  <text x="72" y="266" fill="#52615C" font-family="Arial, sans-serif" font-size="16">A short editorial route into the issue theme and article context.</text>
+  <rect x="72" y="324" width="420" height="10" rx="5" fill="#D8DED5"/>
+  <rect x="72" y="348" width="486" height="10" rx="5" fill="#D8DED5"/>
+  <rect x="72" y="372" width="360" height="10" rx="5" fill="#D8DED5"/>
+  <circle cx="612" cy="286" r="64" fill="#E8F3F0" stroke="#2C7A73" stroke-width="5"/>
+  <circle cx="612" cy="286" r="38" fill="#F0EEF7" stroke="#655A88" stroke-width="5"/>
+  <path d="M571 286h82M612 245v82" stroke="#14211F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M554 156h96" stroke="#B95642" stroke-width="9" stroke-linecap="round"/>
+  <path d="M554 182h132" stroke="#73823C" stroke-width="9" stroke-linecap="round"/>
+</svg>

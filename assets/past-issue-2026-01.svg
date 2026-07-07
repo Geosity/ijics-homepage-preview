@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" role="img" aria-labelledby="title desc">
+  <title id="title">IJICS Vol. 18 Issue 1 cover</title>
+  <desc id="desc">A cover thumbnail for a past issue about trustworthy automation.</desc>
+  <rect width="240" height="320" rx="10" fill="#f5f7f4"/>
+  <rect x="18" y="18" width="204" height="284" rx="8" fill="#ffffff" stroke="#d8ded5" stroke-width="2"/>
+  <rect x="18" y="18" width="204" height="70" rx="8" fill="#15211f"/>
+  <text x="34" y="62" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">IJICS</text>
+  <text x="34" y="120" fill="#2c7a73" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700">VOL. 18 / ISSUE 1</text>
+  <text x="34" y="152" fill="#15211f" font-family="Georgia, serif" font-size="27" font-weight="700">Trustworthy</text>
+  <text x="34" y="184" fill="#15211f" font-family="Georgia, serif" font-size="27" font-weight="700">automation</text>
+  <circle cx="72" cy="242" r="28" fill="#e8f3f0" stroke="#2c7a73" stroke-width="6"/>
+  <circle cx="132" cy="242" r="28" fill="#f0eef7" stroke="#655a88" stroke-width="6"/>
+  <circle cx="102" cy="226" r="8" fill="#b95642"/>
+  <path d="M78 242h48M102 234v-28" stroke="#15211f" stroke-width="4" stroke-linecap="round"/>
+</svg>

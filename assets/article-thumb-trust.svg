@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Trust calibration thumbnail</title>
+  <desc id="desc">Square thumbnail with calibration rings for a trust systems article.</desc>
+  <rect width="160" height="160" rx="18" fill="#e8f3f0"/>
+  <circle cx="80" cy="80" r="52" fill="#ffffff" stroke="#2c7a73" stroke-width="8"/>
+  <circle cx="80" cy="80" r="24" fill="#f0eef7" stroke="#655a88" stroke-width="6"/>
+  <path d="M80 28v104M28 80h104" stroke="#15211f" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="105" cy="55" r="10" fill="#b95642"/>
+</svg>

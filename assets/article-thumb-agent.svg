@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Industrial inspection thumbnail</title>
+  <desc id="desc">Square thumbnail with sensor frames for an industrial inspection article.</desc>
+  <rect width="160" height="160" rx="18" fill="#f7ebe7"/>
+  <rect x="32" y="38" width="96" height="84" rx="12" fill="#ffffff" stroke="#b95642" stroke-width="7"/>
+  <path d="M52 62h56M52 82h36M52 102h48" stroke="#15211f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M35 35l24 24M125 35l-24 24M35 125l24-24M125 125l-24-24" stroke="#2c7a73" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="116" cy="108" r="14" fill="#655a88"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">About journal icon</title>
+  <desc id="desc">A small icon for official journal information.</desc>
+  <rect width="96" height="96" rx="14" fill="#e8f3f0"/>
+  <circle cx="48" cy="48" r="30" fill="#fff" stroke="#2c7a73" stroke-width="7"/>
+  <path d="M48 43v24M48 29v2" stroke="#15211f" stroke-width="7" stroke-linecap="round"/>
+</svg>
