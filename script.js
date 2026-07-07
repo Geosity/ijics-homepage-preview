@@ -1,81 +1,8 @@
-const structure = {
-  Authors: [
-    {
-      title: "Instructions for Authors",
-      note: "Keep the complete author workflow in one page with stable anchors for preparation, review, ethics, and acceptance.",
-      tertiary: [
-        "Article Types",
-        "Submission Checklist",
-        "Manuscript Template",
-        "Peer Review Process",
-        "Publication Ethics",
-        "After Acceptance: proof",
-        "online first",
-        "DOI",
-        "indexing",
-      ],
-    },
-    {
-      title: "Copyright & License",
-      note: "Explain author rights, reuse, archiving, license wording, and version date before authors submit.",
-      tertiary: ["copyright holder", "license type", "reuse", "self-archiving", "last updated"],
-    },
-    {
-      title: "Article Processing Charge",
-      note: "Show when APC applies, whether waivers exist, and which official payment path is valid.",
-      tertiary: ["fee trigger", "amount", "waiver", "payment notice", "official channel"],
-    },
-    {
-      title: "Submit Manuscript",
-      note: "Open the official submission path only after the author sees the system name, correct domain, and return path.",
-      tertiary: ["official system", "correct domain", "required files", "return path", "system help"],
-    },
-  ],
-  Reviewers: [
-    {
-      title: "Verify invitation",
-      note: "Confirm whether a review request is official before opening external links.",
-      tertiary: ["sender check", "journal email", "manuscript ID", "deadline", "support"],
-    },
-    {
-      title: "Reviewer guide",
-      note: "Review criteria, confidentiality, conflict rules, and deadline expectations stay together.",
-      tertiary: ["criteria", "confidentiality", "conflict of interest", "deadline", "ethics"],
-    },
-    {
-      title: "Review portal",
-      note: "The work entry is separate from public reviewer guidance.",
-      tertiary: ["portal entry", "access help", "file access", "submit review", "return path"],
-    },
-    {
-      title: "Reviewer support",
-      note: "Reviewer questions route away from author submission support.",
-      tertiary: ["invitation help", "deadline question", "portal access", "COI disclosure", "contact"],
-    },
-  ],
-  Editors: [
-    {
-      title: "Editorial policies",
-      note: "Editor duties and policy pages are separated from public board display.",
-      tertiary: ["editor duties", "publication ethics", "COI", "misconduct contact", "last updated"],
-    },
-    {
-      title: "Workspace and journal management",
-      note: "Internal work entry and maintenance tasks stay together.",
-      tertiary: ["editor login", "assigned papers", "decision tasks", "announcements", "metadata updates", "system help"],
-    },
-    {
-      title: "Editorial Office",
-      note: "Editors and staff route operational questions separately from author support.",
-      tertiary: ["editorial inquiry", "policy question", "system issue", "handover", "response expectations"],
-    },
-  ],
-};
-
-const tabs = document.querySelectorAll(".map-tab");
 const sectionLinks = document.querySelectorAll("[data-section-link]");
-const levelTwo = document.querySelector("#levelTwo");
-const levelThree = document.querySelector("#levelThree");
+const quickAccessFloat = document.querySelector("#site-structure");
+const quickAccessLinks = document.querySelectorAll(".quick-access-link");
+const quickAccessSecondary = document.querySelector("#quickAccessSecondary");
+const quickAccessToggle = document.querySelector("#quickAccessToggle");
 const toast = document.querySelector("#toast");
 const issueSelect = document.querySelector("#issueSelect");
 const announcementSearch = document.querySelector("#announcementsSearch");
@@ -84,87 +11,76 @@ const announcementGrid = document.querySelector(".updates-grid");
 const announcementCards = Array.from(document.querySelectorAll(".update-card"));
 const announcementFilterButtons = document.querySelectorAll("[data-announcement-filter]");
 const announcementEmpty = document.querySelector("#announcementEmpty");
-let activeSection = "Authors";
-let activeSecond = null;
+const articleTypeButtons = document.querySelectorAll("[data-article-type]");
+const articleQuery = document.querySelector("#articleQuery");
+const articleCards = Array.from(document.querySelectorAll(".article-card"));
+let activeArticleType = "articles";
 let activeAnnouncementFilter = "all";
 let toastTimer;
 
+const quickAccessMenus = {
+  Authors: [
+    "Instructions for Authors",
+    "Copyright & License",
+    "Article Processing Charge",
+    "Submit Manuscript",
+  ],
+  Reviewers: ["Verify invitation", "Reviewer guide", "Review portal", "Reviewer support"],
+  Editors: ["Editorial policies", "Workspace and journal management", "Editorial Office"],
+};
+
 function showToast(message) {
+  if (!toast) return;
   toast.textContent = message;
   toast.classList.add("is-visible");
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 1800);
 }
 
-function renderMap() {
-  if (!activeSection) {
-    levelTwo.hidden = true;
-    levelThree.hidden = true;
-    levelTwo.innerHTML = "";
-    levelThree.innerHTML = "";
-    return;
-  }
+function renderQuickAccessSecondary(targetSection) {
+  if (!quickAccessSecondary) return;
 
-  const items = structure[activeSection];
-  levelTwo.hidden = false;
-  levelTwo.innerHTML = items
-    .map(
-      (item, index) =>
-        `<button type="button" class="${index === activeSecond ? "is-active" : ""}" data-index="${index}">${item.title}</button>`
-    )
-    .join("");
-
-  if (activeSecond === null) {
-    levelThree.hidden = true;
-    levelThree.innerHTML = "";
-  } else {
-    const selected = items[activeSecond];
-    levelThree.hidden = false;
-    levelThree.innerHTML = `
-      <h3>${selected.title}</h3>
-      <p>${selected.note}</p>
-      <ul class="tertiary-list">
-        ${selected.tertiary.map((entry) => `<li>${entry}</li>`).join("")}
-      </ul>
-    `;
-  }
-
-  levelTwo.querySelectorAll("button").forEach((button) => {
-    button.addEventListener("click", () => {
-      activeSecond = Number(button.dataset.index);
-      renderMap();
-    });
-  });
+  const items = quickAccessMenus[targetSection] || [];
+  quickAccessSecondary.innerHTML = `
+    <p>${targetSection}</p>
+    <div class="quick-access-secondary-list">
+      ${items
+        .map((item) => `<button type="button" class="quick-access-secondary-link">${item}</button>`)
+        .join("")}
+    </div>
+  `;
 }
 
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    activeSection = tab.dataset.section;
-    activeSecond = null;
-    tabs.forEach((item) => {
-      const isActive = item === tab;
-      item.classList.toggle("is-active", isActive);
-      item.setAttribute("aria-selected", String(isActive));
-    });
-    renderMap();
+function setQuickAccessSection(targetSection) {
+  quickAccessLinks.forEach((item) => {
+    item.classList.toggle("is-active", item.dataset.sectionLink === targetSection);
   });
-});
+  renderQuickAccessSecondary(targetSection);
+}
 
-renderMap();
+renderQuickAccessSecondary("Authors");
+
+function toggleQuickAccess() {
+  if (!quickAccessToggle || !quickAccessFloat) return;
+
+  const isCollapsed = quickAccessFloat.classList.toggle("is-collapsed");
+  quickAccessToggle.setAttribute("aria-expanded", String(!isCollapsed));
+  quickAccessToggle.setAttribute(
+    "aria-label",
+    isCollapsed ? "Expand Quick Access" : "Collapse Quick Access"
+  );
+  quickAccessToggle.textContent = isCollapsed ? "<" : ">";
+}
 
 sectionLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    const targetSection = link.dataset.sectionLink;
-    const targetTab = Array.from(tabs).find((tab) => tab.dataset.section === targetSection);
-    if (!targetTab) return;
-    activeSection = targetSection;
-    activeSecond = null;
-    tabs.forEach((item) => {
-      const isActive = item === targetTab;
-      item.classList.toggle("is-active", isActive);
-      item.setAttribute("aria-selected", String(isActive));
-    });
-    renderMap();
+    setQuickAccessSection(link.dataset.sectionLink);
+  });
+});
+
+quickAccessLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    setQuickAccessSection(link.dataset.sectionLink);
   });
 });
 
@@ -172,17 +88,34 @@ document.querySelector("#article-search").addEventListener("submit", (event) => 
   event.preventDefault();
 });
 
-document.querySelector("#articleQuery").addEventListener("input", (event) => {
-  const query = event.target.value.trim().toLowerCase();
-  const cards = document.querySelectorAll(".article-card");
+function applyArticleFilters() {
+  const query = articleQuery ? articleQuery.value.trim().toLowerCase() : "";
   let visible = 0;
-  cards.forEach((card) => {
-    const match = !query || card.dataset.search.includes(query);
+  articleCards.forEach((card) => {
+    const typeMatch = card.dataset.articleGroup === activeArticleType;
+    const queryMatch = !query || card.dataset.search.includes(query);
+    const match = typeMatch && queryMatch;
     card.classList.toggle("is-hidden", !match);
     if (match) visible += 1;
   });
   if (!visible) showToast("No article matches this issue");
-});
+}
+
+if (articleQuery) {
+  articleQuery.addEventListener("input", applyArticleFilters);
+}
+
+function setArticleType(nextType) {
+  activeArticleType = nextType;
+  articleTypeButtons.forEach((item) => {
+    const isActive = item.dataset.articleType === nextType;
+    item.classList.toggle("is-active", isActive);
+    item.setAttribute("aria-pressed", String(isActive));
+  });
+  applyArticleFilters();
+}
+
+applyArticleFilters();
 
 if (issueSelect) {
   issueSelect.addEventListener("change", () => {
