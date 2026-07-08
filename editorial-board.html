@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editorial Board · IJICS Homepage Preview</title>
+    <meta
+      name="description"
+      content="IJICS editorial page preview with editorial board roles, associate editors, and editorial office contact information."
+    />
+    <link rel="stylesheet" href="./styles.css?v=32" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="./index.html#home" aria-label="IJICS home">
+          <img
+            class="brand-logo"
+            src="./assets/ijics-logo-lockup-transparent.png"
+            width="798"
+            height="128"
+            alt="The International Journal of Intelligent Control and Systems"
+          />
+        </a>
+        <div class="header-actions">
+          <nav class="social-links" aria-label="Journal utility links">
+            <a href="./editorial-board.html#editorial-office" aria-label="Contact Editorial Office">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6.5h16v11H4z" />
+                <path d="m4 7 8 6 8-6" />
+              </svg>
+              <span class="visually-hidden">Contact</span>
+            </a>
+            <a href="https://www.ijics.cn/" aria-label="Open current IJICS website">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8" />
+                <path d="M4 12h16M12 4c2.2 2.3 3.2 5 3.2 8s-1 5.7-3.2 8M12 4c-2.2 2.3-3.2 5-3.2 8s1 5.7 3.2 8" />
+              </svg>
+              <span class="visually-hidden">Website</span>
+            </a>
+            <a href="./author-center.html#author-guide" aria-label="Author resources">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 4.5h10v15H7z" />
+                <path d="M9.5 8h5M9.5 11.5h5M9.5 15h3" />
+              </svg>
+              <span class="visually-hidden">Author resources</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="navigation-board">
+        <nav class="section-shortcuts" aria-label="Primary columns">
+          <a href="./index.html#home">Home</a>
+          <details class="nav-menu">
+            <summary>About</summary>
+            <div class="nav-menu-panel">
+              <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
+              <a href="./editorial-board.html#editorial-board">Editorial Board</a>
+              <a href="./author-center.html#apf">Article Publish Fee</a>
+              <a href="./editorial-board.html#editorial-office" data-section-link="Editors">Editorial Office</a>
+            </div>
+          </details>
+          <a href="./index.html#all-issues">All Issues</a>
+          <a class="nav-home" href="./editorial-board.html#editorial-board">Editorial</a>
+        </nav>
+
+        <form class="nav-article-search" id="article-search" role="search">
+          <label for="articleQuery">Search articles</label>
+          <div class="nav-search-row">
+            <input
+              id="articleQuery"
+              type="search"
+              placeholder="Title, author, DOI, keyword"
+              autocomplete="off"
+            />
+            <select id="issueSelect" aria-label="Article collection">
+              <option value="">All articles</option>
+              <optgroup label="Articles">
+                <option value="current">Current Issue</option>
+                <option value="archive">Journal Archive</option>
+                <option value="popular">Popular Articles</option>
+              </optgroup>
+              <optgroup label="Journal information">
+                <option value="cfp">Call for Papers</option>
+                <option value="authors">Author Resources</option>
+              </optgroup>
+            </select>
+            <button type="submit" aria-label="Search articles">Search</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="quick-access-float" id="site-structure" aria-label="Quick Access">
+        <button
+          type="button"
+          class="quick-access-toggle"
+          id="quickAccessToggle"
+          aria-label="Collapse Quick Access"
+          aria-expanded="true"
+          aria-controls="quickAccessContent"
+          onclick="toggleQuickAccess()"
+        >
+          &gt;
+        </button>
+        <div class="quick-access-content" id="quickAccessContent">
+          <p class="eyebrow">Quick Access</p>
+          <div class="quick-access-links">
+            <button type="button" class="quick-access-link" data-section-link="Authors">For Authors</button>
+            <button type="button" class="quick-access-link" data-section-link="Reviewers">For Reviewers</button>
+            <button type="button" class="quick-access-link is-active" data-section-link="Editors">For Editors</button>
+          </div>
+          <div class="quick-access-secondary" id="quickAccessSecondary" aria-live="polite"></div>
+        </div>
+      </aside>
+
+      <div class="content-flow">
+        <section class="subpage-hero" id="editorial-board">
+          <div>
+            <p class="eyebrow">Editorial</p>
+            <h1>Editorial Board and Editorial Office</h1>
+            <p>
+              Editorial identity is kept on a dedicated page so verification users can inspect roles,
+              affiliations, office contact details, and source boundaries without passing through
+              author instructions.
+            </p>
+          </div>
+          <nav class="subpage-jump-row" aria-label="Editorial sections">
+            <a href="#editor-in-chief">Editor-in-Chief</a>
+            <a href="#deputy-editors">Deputy Editors</a>
+            <a href="#associate-editors">Associate Editors</a>
+            <a href="#editorial-office">Editorial Office</a>
+          </nav>
+        </section>
+
+        <section class="profile-band" aria-label="Editorial board">
+          <div class="board-grid">
+            <article class="board-role-card" id="editor-in-chief">
+              <h2>Editor-in-Chief</h2>
+              <div class="board-person board-person-feature">
+                <span class="board-avatar" aria-hidden="true">FW</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Fei-Yue Wang</strong>
+                  <span class="board-person-affiliation">Chinese Academy of Sciences, China</span>
+                </div>
+              </div>
+            </article>
+            <article class="board-role-card" id="deputy-editors">
+              <h2>Deputy Editor-in-Chief</h2>
+              <div class="board-person-list">
+                <div class="board-person board-person-feature">
+                  <span class="board-avatar" aria-hidden="true">QW</span>
+                  <div class="board-person-copy">
+                    <strong class="board-person-name">Qinglai Wei</strong>
+                    <span class="board-person-affiliation">Chinese Academy of Sciences, China</span>
+                  </div>
+                </div>
+                <div class="board-person board-person-feature">
+                  <span class="board-avatar" aria-hidden="true">PC</span>
+                  <div class="board-person-copy">
+                    <strong class="board-person-name">C. L. Philip Chen</strong>
+                    <span class="board-person-affiliation">South China University of Technology, China</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <article class="board-list-card" id="associate-editors">
+            <h2>Associate Editors</h2>
+            <ul class="associate-grid">
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">PA</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">P. J. Antsaklis</strong>
+                  <span class="board-person-affiliation">Notre Dame University, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">PB</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">P. Bonissone</strong>
+                  <span class="board-person-affiliation">GE Center for Research and Development, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">YC</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Y.-B. Chen</strong>
+                  <span class="board-person-affiliation">Purdue University at Indianapolis, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">CS</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">C. W. de Silva</strong>
+                  <span class="board-person-affiliation">University of British Columbia, Canada</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">CH</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">C. C. Hang</strong>
+                  <span class="board-person-affiliation">National University of Singapore, Singapore</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">HH</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">H. Hashimoto</strong>
+                  <span class="board-person-affiliation">University of Tokyo, Japan</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">CH</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">C. J. Harris</strong>
+                  <span class="board-person-affiliation">University of Southampton, UK</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">YH</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Y. C. Ho</strong>
+                  <span class="board-person-affiliation">Harvard University, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">BH</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">B. Hrúz</strong>
+                  <span class="board-person-affiliation">Slovak University of Technology Bratislavaz, Slovak Republic</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">AK</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">A. Kusiak</strong>
+                  <span class="board-person-affiliation">University of Iowa, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">KK</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">K. J. Kyriakopoulos</strong>
+                  <span class="board-person-affiliation">National Technical University of Athens, Greece</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">GL</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">G. S. C. Lee</strong>
+                  <span class="board-person-affiliation">National Science Foundation, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">SL</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Sukhan Lee</strong>
+                  <span class="board-person-affiliation">Sungkyunkwan University, Korea</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">FL</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">F. L. Lewis</strong>
+                  <span class="board-person-affiliation">The University of Texas at Arlington, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">PL</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">P. M. U. A. Lima</strong>
+                  <span class="board-person-affiliation">Institute Superior Tecnico, Portugal</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">DL</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">D. Liu</strong>
+                  <span class="board-person-affiliation">University of Illinois at Chicago, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">YL</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Y. X. Lu</strong>
+                  <span class="board-person-affiliation">Chinese Academy of Science, China</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">YL</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Y. Z. Lu</strong>
+                  <span class="board-person-affiliation">Bethlehem Steel Corporation, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">PL</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">P. B. Luh</strong>
+                  <span class="board-person-affiliation">University of Connecticut, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">JM</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">J. E. Mcinroy</strong>
+                  <span class="board-person-affiliation">University of Wyoming, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">AM</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">A. Meystel</strong>
+                  <span class="board-person-affiliation">Drexel University, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">AN</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">A. Nerode</strong>
+                  <span class="board-person-affiliation">Cornell University, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">UO</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">U. Ozguner</strong>
+                  <span class="board-person-affiliation">Ohio State University, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">FP</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">F. Pfeiffer</strong>
+                  <span class="board-person-affiliation">Technische University Munchen, Germany</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">DP</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">D. A. Pospelov</strong>
+                  <span class="board-person-affiliation">Computer Center of the Russian Academy of Sciences, Russia</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">PS</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">P. S. Schenker</strong>
+                  <span class="board-person-affiliation">Jet Propulsion Laboratory, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">RS</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Ruizhuo Song</strong>
+                  <span class="board-person-affiliation">University of Science and Technology Beijing, China</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">YT</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Y. G. Tang</strong>
+                  <span class="board-person-affiliation">Rowan University, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">TT</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">T. J. Tarn</strong>
+                  <span class="board-person-affiliation">Washington University, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">JW</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">J. Wang</strong>
+                  <span class="board-person-affiliation">Monmouth University, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">ZW</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Zhanshan Wang</strong>
+                  <span class="board-person-affiliation">Northeastern University, China</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">ZW</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Zhuo Wang</strong>
+                  <span class="board-person-affiliation">Beihang University, China</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">WW</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">W. M. Wonham</strong>
+                  <span class="board-person-affiliation">University of Toronto, Canada</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">QY</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Qinmin Yang</strong>
+                  <span class="board-person-affiliation">Zhejiang University, China</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">SY</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">S. Z. Yang</strong>
+                  <span class="board-person-affiliation">Huazhong University of Science and Technology, China</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">DZ</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">D. Zeng</strong>
+                  <span class="board-person-affiliation">University of Arizona, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">PZ</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Pinjia Zhang</strong>
+                  <span class="board-person-affiliation">Tsinghua University, China</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">YZ</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Y. F. Zheng</strong>
+                  <span class="board-person-affiliation">Ohio State University, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">MZ</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Mengchu Zhou</strong>
+                  <span class="board-person-affiliation">New Jersey Institute of Technology, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">HZ</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">H. Zhu</strong>
+                  <span class="board-person-affiliation">Nipissing University, Canada</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">RZ</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">R. Zurawski</strong>
+                  <span class="board-person-affiliation">Atut Technology, USA</span>
+                </div>
+              </li>
+              <li class="board-person">
+                <span class="board-avatar" aria-hidden="true">JZ</span>
+                <div class="board-person-copy">
+                  <strong class="board-person-name">Jun Zhang</strong>
+                  <span class="board-person-affiliation">Wuhan University, China</span>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="profile-band profile-band-paper" id="editorial-office" aria-label="Editorial office">
+          <article class="profile-card office-card">
+            <p class="eyebrow">Editorial Office</p>
+            <h2>Official contact path</h2>
+            <div class="office-contact-layout">
+              <dl class="office-facts">
+                <div>
+                  <dt>Address</dt>
+                  <dd>Room 1505, Satellite Building, No. 63 Zhichun Road, Hai Dian District, Beijing 100190, China</dd>
+                </div>
+                <div>
+                  <dt>Email</dt>
+                  <dd><a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a></dd>
+                </div>
+                <div>
+                  <dt>Telephone</dt>
+                  <dd>010-61943066</dd>
+                </div>
+              </dl>
+              <div class="mock-map" role="img" aria-label="Mock map for the IJICS Editorial Office near No. 63 Zhichun Road, Haidian District, Beijing">
+                <div class="mock-map-topbar">
+                  <span>Google Maps mock</span>
+                  <span>Haidian District, Beijing</span>
+                </div>
+                <div class="mock-map-grid" aria-hidden="true">
+                  <span class="map-road map-road-main"></span>
+                  <span class="map-road map-road-cross"></span>
+                  <span class="map-road map-road-diagonal"></span>
+                  <span class="map-block map-block-a"></span>
+                  <span class="map-block map-block-b"></span>
+                  <span class="map-block map-block-c"></span>
+                  <span class="map-block map-block-d"></span>
+                  <span class="map-pin"></span>
+                </div>
+                <div class="mock-map-caption">
+                  <strong>IJICS Editorial Office</strong>
+                  <span>No. 63 Zhichun Road</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="contact" aria-label="Journal compliance information">
+      <div class="footer-compliance">
+        <p class="eyebrow">Journal directory</p>
+        <nav class="footer-directory" aria-label="Expanded journal navigation">
+          <section class="footer-directory-group">
+            <h2>About</h2>
+            <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
+            <a href="./editorial-board.html#editorial-board">Editorial Board</a>
+            <a href="./editorial-board.html#editorial-office">Editorial Office</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Browse</h2>
+            <a href="./index.html#home">Home</a>
+            <a href="./index.html#current-issue">Current Issue</a>
+            <a href="./index.html#all-issues">All Issues</a>
+            <a href="./index.html#call-for-papers">Call for Papers</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Editor</h2>
+            <a href="./editorial-board.html#editor-in-chief">Editor-in-Chief</a>
+            <a href="./editorial-board.html#deputy-editors">Deputy Editors</a>
+            <a href="./editorial-board.html#associate-editors">Associate Editors</a>
+            <a href="./editorial-board.html#editorial-office">Editorial Office</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Author</h2>
+            <a href="./author-center.html#author-guide">Instructions for Authors</a>
+            <a href="./author-center.html#submission">Submission path</a>
+            <a href="./author-center.html#requirements">Manuscript requirements</a>
+            <a href="./author-center.html#peer-review">Peer review process</a>
+            <a href="./author-center.html#templates">Templates and copyright</a>
+            <a href="./author-center.html#apf">Article Publish Fee</a>
+            <a href="./editorial-board.html#editorial-office">Submission email</a>
+          </section>
+        </nav>
+        <div class="identity-strip">
+          <span>The International Journal of Intelligent Control and Systems</span>
+          <span>IJICS</span>
+          <span>Official domain: www.ijics.cn</span>
+          <span>ISSN: to be verified before launch</span>
+          <a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a>
+          <span>Tel: 010-61943066</span>
+          <span>Room 1505, Satellite Building, No. 63 Zhichun Road, Hai Dian District, Beijing 100190, China</span>
+          <span>京ICP备18005680号-5</span>
+          <span>© 2021 IJICS. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js?v=27"></script>
+  </body>
+</html>

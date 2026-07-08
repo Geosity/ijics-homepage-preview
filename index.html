@@ -6,80 +6,61 @@
     <title>IJICS Homepage Preview</title>
     <meta
       name="description"
-      content="A homepage preview for IJICS showing article access, author information, journal information, policies, and contact paths."
+      content="A homepage preview for IJICS using public journal content for article access, author information, editorial board, fees, submission paths, and contact verification."
     />
-    <link rel="stylesheet" href="./styles.css?v=23" />
+    <link rel="stylesheet" href="./styles.css?v=32" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
       <div class="nav-shell">
-        <a class="brand" href="#home" aria-label="IJICS home">
+          <a class="brand" href="./index.html#home" aria-label="IJICS home">
           <img
             class="brand-logo"
-            src="./assets/ijics-logo-lockup.png"
+            src="./assets/ijics-logo-lockup-transparent.png"
             width="798"
             height="128"
             alt="The International Journal of Intelligent Control and Systems"
           />
         </a>
         <div class="header-actions">
-          <nav class="social-links" aria-label="Journal social media">
-            <a href="#contact" aria-label="WeChat official account">
+          <nav class="social-links" aria-label="Journal utility links">
+            <a href="./editorial-board.html#editorial-office" aria-label="Contact Editorial Office">
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M9.8 5.5C5.9 5.5 3 7.8 3 10.8c0 1.7 1 3.2 2.6 4.1l-.5 2 2.2-1.1c.8.2 1.6.3 2.5.3 3.9 0 6.8-2.3 6.8-5.3S13.7 5.5 9.8 5.5Z" />
-                <path d="M14.6 10.9c3.1.2 5.4 2.1 5.4 4.6 0 1.4-.8 2.7-2.1 3.5l.4 1.5-1.7-.8c-.7.2-1.3.3-2 .3-2.8 0-5-1.5-5.7-3.6" />
-                <circle cx="7.7" cy="10.1" r=".7" />
-                <circle cx="11.8" cy="10.1" r=".7" />
+                <path d="M4 6.5h16v11H4z" />
+                <path d="m4 7 8 6 8-6" />
               </svg>
-              <span class="visually-hidden">WeChat</span>
+              <span class="visually-hidden">Contact</span>
             </a>
-            <a href="#contact" aria-label="X profile">
+            <a href="https://www.ijics.cn/" aria-label="Open current IJICS website">
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 5l14 14M19 5 5 19" />
+                <circle cx="12" cy="12" r="8" />
+                <path d="M4 12h16M12 4c2.2 2.3 3.2 5 3.2 8s-1 5.7-3.2 8M12 4c-2.2 2.3-3.2 5-3.2 8s1 5.7 3.2 8" />
               </svg>
-              <span class="visually-hidden">X</span>
+              <span class="visually-hidden">Website</span>
             </a>
-            <a href="#contact" aria-label="Zhihu profile">
+            <a href="./author-center.html#author-guide" aria-label="Author resources">
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 7h7M8.5 4.5v15M5 13h7M12 7c-.3 4.8-2.2 8.6-6.4 11.5" />
-                <rect x="14.5" y="6" width="5" height="11" rx="1" />
+                <path d="M7 4.5h10v15H7z" />
+                <path d="M9.5 8h5M9.5 11.5h5M9.5 15h3" />
               </svg>
-              <span class="visually-hidden">Zhihu</span>
-            </a>
-            <a href="#contact" aria-label="Xiaohongshu profile">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M6 5.5h12v13H6z" />
-                <path d="M9 5.5v13M15 5.5v13M8.2 9h7.6M8.2 13h7.6" />
-              </svg>
-              <span class="visually-hidden">Xiaohongshu</span>
-            </a>
-            <a href="#contact" aria-label="RSS feed">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="6.5" cy="17.5" r="1.8" />
-                <path d="M5 9.5c5.2 0 9.5 4.3 9.5 9.5M5 5c7.7 0 14 6.3 14 14" />
-              </svg>
-              <span class="visually-hidden">RSS</span>
+              <span class="visually-hidden">Author resources</span>
             </a>
           </nav>
-          <div class="journal-meta" aria-label="Journal identifiers">
-            <span>ISSN 2040-0000</span>
-            <span>eISSN 2040-000X</span>
-          </div>
         </div>
       </div>
 
       <div class="navigation-board">
         <nav class="section-shortcuts" aria-label="Primary columns">
-          <a class="nav-home" href="#home">Home</a>
+          <a class="nav-home" href="./index.html#home">Home</a>
           <details class="nav-menu">
             <summary>About</summary>
             <div class="nav-menu-panel">
-              <a href="#about">Aim &amp; Scope</a>
-              <a href="#policies">Open Access</a>
-              <a href="#about">Editorial Board</a>
-              <a href="#contact" data-section-link="Editors">Editorial Office</a>
+              <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
+              <a href="./editorial-board.html#editorial-board">Editorial Board</a>
+              <a href="./author-center.html#apf">Article Publish Fee</a>
+              <a href="./editorial-board.html#editorial-office" data-section-link="Editors">Editorial Office</a>
             </div>
           </details>
           <a href="#all-issues">All Issues</a>
@@ -97,13 +78,13 @@
             <select id="issueSelect" aria-label="Article collection">
               <option value="">All articles</option>
               <optgroup label="Articles">
-                <option value="forthcoming">Forthcoming Issue</option>
                 <option value="current">Current Issue</option>
                 <option value="archive">Journal Archive</option>
+                <option value="popular">Popular Articles</option>
               </optgroup>
-              <optgroup label="Announcements">
+              <optgroup label="Journal information">
                 <option value="cfp">Call for Papers</option>
-                <option value="journal-news">Journal News</option>
+                <option value="authors">Author Resources</option>
               </optgroup>
             </select>
             <button type="submit" aria-label="Search articles">Search</button>
@@ -137,267 +118,497 @@
       </aside>
 
       <div class="content-flow">
-      <section class="home-band" id="home">
-        <div class="home-grid">
-          <section class="reader-panel" id="articles" aria-labelledby="reader-title">
-            <div class="feature-carousel" aria-label="Featured notices">
-              <div class="feature-track" id="featureTrack">
-                <article class="feature-slide feature-slide-editorial">
-                  <div>
-                    <p class="eyebrow">Vol. 18, Issue 2 · July 2026</p>
-                    <h1 id="reader-title">Editorial selection from the current issue</h1>
-                    <p>
-                      Latest issue articles are listed for quick scanning. The editorial panel
-                      highlights one article with context and a page preview.
-                    </p>
-                  </div>
-                  <a class="quiet-link" href="#article-detail">Open article page</a>
-                </article>
+        <section class="home-band" id="home">
+          <div class="home-grid">
+            <section class="reader-panel" id="articles" aria-labelledby="reader-title">
+              <div class="feature-carousel" aria-label="Featured notices">
+                <div class="feature-track" id="featureTrack">
+                  <article class="feature-slide feature-slide-editorial">
+                    <div>
+                      <p class="eyebrow">Current issue · 2026 Volume 31 Number 2</p>
+                      <h1 id="reader-title">The International Journal of Intelligent Control and Systems</h1>
+                      <p>
+                        The current issue preview is organized around Editorial, Research Articles,
+                        and Communications and Letters.
+                      </p>
+                    </div>
+                    <a class="quiet-link" href="#current-issue">Open current issue</a>
+                  </article>
 
-                <article class="feature-slide feature-slide-cfp">
-                  <div>
-                    <p class="eyebrow">Call for papers · 30 September 2026</p>
-                    <h2>Trustworthy intelligent computing systems</h2>
-                    <p>
-                      Submissions are invited on robust AI systems, decision support,
-                      safety evaluation, and human-centered automation.
-                    </p>
-                  </div>
-                  <a class="quiet-link" href="#site-structure" data-section-link="Authors">Submission scope</a>
-                </article>
+                  <article class="feature-slide feature-slide-cfp">
+                    <div>
+                      <p class="eyebrow">Call for Papers</p>
+                      <h2>Advances of Intelligent Vehicle Systems in Complex Traffic Environments</h2>
+                      <p>
+                        Special Issue Editors: Jing Zhao, Jinwu Gao, Yuhu Wu, Lingxi Li, Xiaoxiang Na.
+                      </p>
+                    </div>
+                    <a class="quiet-link" href="#call-for-papers">View calls</a>
+                  </article>
 
-                <article class="feature-slide feature-slide-special">
-                  <div>
-                    <p class="eyebrow">Special focus · 15 November 2026</p>
-                    <h2>Special focus: AI agents in industrial settings</h2>
-                    <p>
-                      We welcome empirical, systems, and review articles that connect
-                      intelligent agents with verifiable deployment evidence.
-                    </p>
-                  </div>
-                  <a class="quiet-link" href="#site-structure" data-section-link="Authors">Author guidance</a>
-                </article>
-              </div>
-            </div>
-
-            <div class="article-type-switcher" aria-label="Article type shortcuts">
-              <button type="button" class="article-type-tab is-active" data-article-type="articles" aria-pressed="true" onclick="setArticleType('articles')">
-                Research Articles
-              </button>
-              <button type="button" class="article-type-tab article-type-tab-alt" data-article-type="communication" aria-pressed="false" onclick="setArticleType('communication')">
-                Communication and letters
-              </button>
-              <span class="issue-context">
-                <span>Current issue</span>
-                <strong>Vol. 18, Issue 2 · July 2026</strong>
-              </span>
-            </div>
-
-            <div class="current-issue-layout">
-              <div class="article-list" id="articleList" aria-live="polite">
-                <article class="article-card" data-article-group="articles" data-search="adaptive trust calibration autonomous review systems chen doi 10.1234 ijics.2026.018201">
-                  <img src="./assets/article-thumb-trust.svg" alt="Trust calibration article thumbnail" />
-                  <div>
-                    <p class="type-label">Research article</p>
-                    <h2>Adaptive trust calibration in autonomous review systems</h2>
-                    <p>Y. Chen, A. Ribeiro · Published July 2026</p>
-                  </div>
-                </article>
-
-                <article class="article-card" data-article-group="articles" data-search="privacy preserving graph reasoning medical iot tanaka doi 10.1234 ijics.2026.018202">
-                  <img src="./assets/article-thumb-graph.svg" alt="Graph reasoning article thumbnail" />
-                  <div>
-                    <p class="type-label">Review article</p>
-                    <h2>Privacy-preserving graph reasoning for medical IoT</h2>
-                    <p>M. Tanaka, S. Malik · Published July 2026</p>
-                  </div>
-                </article>
-
-                <article class="article-card" data-article-group="communication" data-search="benchmarking multimodal agents industrial inspection martinez doi 10.1234 ijics.2026.018203">
-                  <img src="./assets/article-thumb-agent.svg" alt="Industrial inspection article thumbnail" />
-                  <div>
-                    <p class="type-label">Short communication</p>
-                    <h2>Benchmarking multimodal agents for industrial inspection</h2>
-                    <p>L. Martinez, H. Singh · Published June 2026</p>
-                  </div>
-                </article>
-
-                <article class="article-card" data-article-group="articles" data-search="robust decision support distribution shift nielsen doi 10.1234 ijics.2026.018204">
-                  <img src="./assets/article-thumb-trust.svg" alt="Decision support article thumbnail" />
-                  <div>
-                    <p class="type-label">Research article</p>
-                    <h2>Robust decision support under distribution shift</h2>
-                    <p>K. Nielsen, P. Duarte · Published June 2026</p>
-                  </div>
-                </article>
-
-                <article class="article-card" data-article-group="articles" data-search="explainable controllers edge robotics ibrahim doi 10.1234 ijics.2026.018205">
-                  <img src="./assets/article-thumb-agent.svg" alt="Edge robotics article thumbnail" />
-                  <div>
-                    <p class="type-label">System report</p>
-                    <h2>Explainable controllers for edge robotics</h2>
-                    <p>N. Ibrahim, R. Cho · Published June 2026</p>
-                  </div>
-                </article>
+                  <article class="feature-slide feature-slide-special">
+                    <div>
+                      <p class="eyebrow">Author Resources</p>
+                      <h2>Submission uses the IJICS online system and official templates</h2>
+                      <p>
+                        Authors submit through the IJICS login page, use Word or LaTeX templates, and can
+                        contact the Editorial Office by email for submission status.
+                      </p>
+                    </div>
+                    <a class="quiet-link" href="./author-center.html#submission" data-section-link="Authors">Submission path</a>
+                  </article>
+                </div>
               </div>
 
-              <article class="current-editorial" id="article-detail" aria-labelledby="article-detail-title">
-                <figure class="article-preview">
-                  <img src="./assets/article-preview.svg" alt="Featured IJICS article page preview" />
-                </figure>
-                <div class="editorial-copy">
-                  <p class="eyebrow">Editorial</p>
-                  <h2 id="article-detail-title">Adaptive trust calibration in autonomous review systems</h2>
-                  <p class="article-byline">Y. Chen, A. Ribeiro · Vol. 18, Issue 2 · Research article · July 2026</p>
-                  <p>
-                    The editorial introduces why this article matters in the current issue.
-                    Full DOI, citation export, PDF, and license actions belong on the article page.
-                  </p>
-                  <a class="editorial-link" href="#article-detail">Open article page</a>
+              <div class="issue-showcase" id="current-issue" aria-labelledby="current-issue-title">
+                <div class="issue-showcase-header">
+                  <div>
+                    <p class="eyebrow">Current issue</p>
+                    <h2 id="current-issue-title">2026 Volume 31 Number 2</h2>
+                  </div>
+                  <a class="quiet-link" href="https://www.ijics.cn/all-issues/article/43">Open issue page</a>
+                </div>
+
+                <div class="article-type-switcher" aria-label="Article type shortcuts">
+                  <div class="article-type-tabs">
+                    <button type="button" class="article-type-tab is-active" data-article-type="all" aria-pressed="true" onclick="setArticleType('all')">
+                      All <span>(8)</span>
+                    </button>
+                    <button type="button" class="article-type-tab" data-article-type="editorial" aria-pressed="false" onclick="setArticleType('editorial')">
+                      Editorial <span>(3)</span>
+                    </button>
+                    <button type="button" class="article-type-tab" data-article-type="articles" aria-pressed="false" onclick="setArticleType('articles')">
+                      Research Articles <span>(4)</span>
+                    </button>
+                    <button type="button" class="article-type-tab" data-article-type="communication" aria-pressed="false" onclick="setArticleType('communication')">
+                      Communications <span>(1)</span>
+                    </button>
+                  </div>
+                  <label class="article-sort">
+                    <span>Sort by:</span>
+                    <select aria-label="Sort current issue articles">
+                      <option>Issue order</option>
+                      <option>Article type</option>
+                      <option>Title A-Z</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="article-list issue-card-grid" id="articleList" aria-live="polite">
+                  <article
+                    class="article-card issue-article-card"
+                    id="article-detail"
+                    data-article-group="editorial"
+                    data-search="agricultural intelligence takes root plant science digital frontier mengzhen kang xiujuan wang marc jaeger veronique letort fei-yue wang 10.62678/IJICS202606.10376"
+                  >
+                    <figure class="article-figure">
+                      <img src="./assets/article-figure-trust-calibration.png" alt="Article thumbnail" />
+                    </figure>
+                    <div class="article-card-body">
+                      <p class="type-label">Editorial</p>
+                      <h2>Agricultural Intelligence Takes Root: Turning Plant Science into a Digital Frontier</h2>
+                      <p class="article-authors">Mengzhen Kang, Xiujuan Wang, Marc Jaeger, Véronique Letort, Fei-Yue Wang</p>
+                      <p class="article-meta">Pages 1-2 <span>|</span> DOI: 10.62678/IJICS202606.10376</p>
+                    </div>
+                    <div class="article-actions" aria-label="Article actions">
+                      <a href="https://www.ijics.cn/article/376">Article</a>
+                      <a href="https://www.ijics.cn/api/ijics/article/browse/376">PDF</a>
+                      <a href="https://doi.org/10.62678/IJICS202606.10376">DOI</a>
+                      <a href="https://www.ijics.cn/all-issues/article/43">Issue</a>
+                    </div>
+                  </article>
+
+                  <article
+                    class="article-card issue-article-card"
+                    data-article-group="editorial"
+                    data-search="humanoid robotics move insights 2026 beijing e-town half marathon editorial office ijics"
+                  >
+                    <figure class="article-figure">
+                      <img src="./assets/article-figure-edge-robotics.png" alt="Article thumbnail" />
+                    </figure>
+                    <div class="article-card-body">
+                      <p class="type-label">Editorial</p>
+                      <h2>Humanoid Robotics on the Move: Insights from the 2026 Beijing E-Town Half Marathon</h2>
+                      <p class="article-authors">Editorial Office of IJICS</p>
+                      <p class="article-meta">Pages 1-2 <span>|</span> DOI not shown in source capture</p>
+                    </div>
+                    <div class="article-actions" aria-label="Article actions">
+                      <a href="https://www.ijics.cn/article/379">Article</a>
+                      <a href="https://www.ijics.cn/api/ijics/article/browse/379">PDF</a>
+                      <a href="https://www.ijics.cn/all-issues/article/43">Issue</a>
+                    </div>
+                  </article>
+
+                  <article
+                    class="article-card issue-article-card"
+                    data-article-group="editorial"
+                    data-search="embodied ai laboratory autonomous robotics physical scientist editorial office ijics"
+                  >
+                    <figure class="article-figure">
+                      <img src="./assets/article-figure-multimodal-inspection.png" alt="Article thumbnail" />
+                    </figure>
+                    <div class="article-card-body">
+                      <p class="type-label">Editorial</p>
+                      <h2>Embodied AI in the Laboratory: Autonomous Robotics as a Physical Scientist</h2>
+                      <p class="article-authors">Editorial Office of IJICS</p>
+                      <p class="article-meta">Pages 1-2 <span>|</span> DOI not shown in source capture</p>
+                    </div>
+                    <div class="article-actions" aria-label="Article actions">
+                      <a href="https://www.ijics.cn/article/382">Article</a>
+                      <a href="https://www.ijics.cn/api/ijics/article/browse/382">PDF</a>
+                      <a href="https://www.ijics.cn/all-issues/article/43">Issue</a>
+                    </div>
+                  </article>
+
+                  <article
+                    class="article-card issue-article-card"
+                    data-article-group="articles"
+                    data-search="research fine segmentation algorithm 3d point clouds high-density overlapping cucumber canopies solar greenhouses huayang wang jiayuan li maolin hou yuntao ma"
+                  >
+                    <figure class="article-figure">
+                      <img src="./assets/article-figure-graph-privacy.png" alt="Article thumbnail" />
+                    </figure>
+                    <div class="article-card-body">
+                      <p class="type-label">Research Article</p>
+                      <h2>Research on a Fine Segmentation Algorithm for 3D Point Clouds of High-Density Overlapping Cucumber Canopies in Solar Greenhouses</h2>
+                      <p class="article-authors">Huayang Wang, Jiayuan Li, Maolin Hou, Yuntao Ma</p>
+                      <p class="article-meta">Pages 1-12 <span>|</span> DOI not shown in source capture</p>
+                    </div>
+                    <div class="article-actions" aria-label="Article actions">
+                      <a href="https://www.ijics.cn/article/322">Article</a>
+                      <a href="https://www.ijics.cn/api/ijics/article/browse/322">PDF</a>
+                      <a href="https://www.ijics.cn/all-issues/article/43">Issue</a>
+                    </div>
+                  </article>
+
+                  <article
+                    class="article-card issue-article-card"
+                    data-article-group="articles"
+                    data-search="superlinearly convergent pmp-based algorithms nash-coupled nonlinear discrete-time control xiaoqian li zonglei jing zhongjin guo peijun ju shen zhang"
+                  >
+                    <figure class="article-figure">
+                      <img src="./assets/article-figure-distribution-shift.png" alt="Article thumbnail" />
+                    </figure>
+                    <div class="article-card-body">
+                      <p class="type-label">Research Article</p>
+                      <h2>Superlinearly Convergent PMP-Based Algorithms for Nash-Coupled Nonlinear Discrete-Time Control</h2>
+                      <p class="article-authors">Xiaoqian Li, Zonglei Jing, Zhongjin Guo, Peijun Ju, Shen Zhang</p>
+                      <p class="article-meta">Pages 1-11 <span>|</span> DOI not shown in source capture</p>
+                    </div>
+                    <div class="article-actions" aria-label="Article actions">
+                      <a href="https://www.ijics.cn/article/352">Article</a>
+                      <a href="https://www.ijics.cn/api/ijics/article/browse/352">PDF</a>
+                      <a href="https://www.ijics.cn/all-issues/article/43">Issue</a>
+                    </div>
+                  </article>
+
+                  <article
+                    class="article-card issue-article-card"
+                    data-article-group="articles"
+                    data-search="integrated perception-decision-control car following control communication uncertainty ran tao shifeng wang"
+                  >
+                    <figure class="article-figure">
+                      <img src="./assets/article-thumb-agent.svg" alt="Article thumbnail" />
+                    </figure>
+                    <div class="article-card-body">
+                      <p class="type-label">Research Article</p>
+                      <h2>Integrated Perception-Decision-Control Car Following Control under Communication Uncertainty</h2>
+                      <p class="article-authors">Ran Tao, Shifeng Wang</p>
+                      <p class="article-meta">Pages 1-8 <span>|</span> DOI not shown in source capture</p>
+                    </div>
+                    <div class="article-actions" aria-label="Article actions">
+                      <a href="https://www.ijics.cn/article/369">Article</a>
+                      <a href="https://www.ijics.cn/api/ijics/article/browse/369">PDF</a>
+                      <a href="https://www.ijics.cn/all-issues/article/43">Issue</a>
+                    </div>
+                  </article>
+
+                  <article
+                    class="article-card issue-article-card"
+                    data-article-group="articles"
+                    data-search="computational social vision human-agent interaction hui yu yiming wang haodong jin schahram dustdar"
+                  >
+                    <figure class="article-figure">
+                      <img src="./assets/article-thumb-graph.svg" alt="Article thumbnail" />
+                    </figure>
+                    <div class="article-card-body">
+                      <p class="type-label">Research Article</p>
+                      <h2>Computational Social Vision for Human-Agent Interaction</h2>
+                      <p class="article-authors">Hui Yu, Yiming Wang, Haodong Jin, Schahram Dustdar</p>
+                      <p class="article-meta">Pages 1-12 <span>|</span> DOI not shown in source capture</p>
+                    </div>
+                    <div class="article-actions" aria-label="Article actions">
+                      <a href="https://www.ijics.cn/article/373">Article</a>
+                      <a href="https://www.ijics.cn/api/ijics/article/browse/373">PDF</a>
+                      <a href="https://www.ijics.cn/all-issues/article/43">Issue</a>
+                    </div>
+                  </article>
+
+                  <article
+                    class="article-card issue-article-card"
+                    data-article-group="communication"
+                    data-search="ppi co-evolution framework parallel physical intelligence xinyuan zhang jiaxi liu siheng yi hui zhang"
+                  >
+                    <figure class="article-figure">
+                      <img src="./assets/article-preview.svg" alt="Article thumbnail" />
+                    </figure>
+                    <div class="article-card-body">
+                      <p class="type-label">Communications and Letters</p>
+                      <h2>PPI: A Co-Evolution Framework for Parallel Physical Intelligence</h2>
+                      <p class="article-authors">Xinyuan Zhang, Jiaxi Liu, Siheng Yi, Hui Zhang</p>
+                      <p class="article-meta">Pages 1-8 <span>|</span> DOI not shown in source capture</p>
+                    </div>
+                    <div class="article-actions" aria-label="Article actions">
+                      <a href="https://www.ijics.cn/article/372">Article</a>
+                      <a href="https://www.ijics.cn/api/ijics/article/browse/372">PDF</a>
+                      <a href="https://www.ijics.cn/all-issues/article/43">Issue</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="summary-band" id="call-for-papers" aria-label="Calls for papers and journal updates">
+          <div class="updates-panel" aria-labelledby="updates-title">
+            <div class="updates-heading">
+              <div>
+                <p class="eyebrow">Call for Papers</p>
+                <h2 id="updates-title">Special issue calls listed on the current IJICS website</h2>
+              </div>
+              <a class="quiet-link" href="https://www.ijics.cn/call-for-papers">Open CFP page</a>
+            </div>
+
+            <div class="updates-grid" aria-label="Scrollable calls">
+              <article
+                class="update-card update-call"
+                data-category="cfp"
+                data-search="advances intelligent vehicle systems complex traffic environments jing zhao jinwu gao yuhu wu lingxi li xiaoxiang na"
+              >
+                <img src="./assets/update-cfp-agents.svg" alt="Call thumbnail" />
+                <div>
+                  <span class="update-label">CFP</span>
+                  <h3>Advances of Intelligent Vehicle Systems in Complex Traffic Environments</h3>
+                  <p>Special Issue Editors: Jing Zhao, Jinwu Gao, Yuhu Wu, Lingxi Li, Xiaoxiang Na.</p>
+                </div>
+              </article>
+              <article
+                class="update-card update-call"
+                data-category="cfp"
+                data-search="ai the agricultural intelligence mengzhen kang marc jaeger xiujuan wang"
+              >
+                <img src="./assets/update-cfp-trust.svg" alt="Call thumbnail" />
+                <div>
+                  <span class="update-label">CFP</span>
+                  <h3>AI the Agricultural Intelligence</h3>
+                  <p>Special Issue Editors: Mengzhen Kang, Marc Jaeger, Xiujuan Wang.</p>
+                </div>
+              </article>
+              <article
+                class="update-card update-call"
+                data-category="cfp"
+                data-search="agentic control agentic automation agentic process organization society fuchun sun dayi wang hui zhang"
+              >
+                <img src="./assets/update-news-board.svg" alt="Call thumbnail" />
+                <div>
+                  <span class="update-label">CFP</span>
+                  <h3>Agentic Control and Agentic Automation for Agentic Process and Agentic Organization in Agentic Society</h3>
+                  <p>Special Issue Editors: Fuchun Sun, Dayi Wang, Hui Zhang.</p>
                 </div>
               </article>
             </div>
 
-          </section>
-        </div>
-      </section>
+            <div class="journal-news-board" aria-labelledby="news-title">
+              <div class="journal-news-heading">
+                <p class="eyebrow">News</p>
+                <h2 id="news-title">Journal news mock for the homepage</h2>
+              </div>
+              <div class="journal-news-list">
+                <article class="journal-news-card">
+                  <img src="./assets/update-news-issue.svg" alt="Issue news thumbnail" />
+                  <div>
+                    <p class="news-meta">2026-06-25 · Current issue</p>
+                    <h3>2026 Volume 31 Number 2 is online</h3>
+                    <p>
+                      The homepage can surface current-issue news separately from article categories,
+                      with source links kept available for verification.
+                    </p>
+                    <a class="quiet-link" href="https://www.ijics.cn/all-issues/article/43">Open issue page</a>
+                  </div>
+                </article>
 
-      <section class="summary-band" aria-label="Homepage second screen">
-        <div class="updates-panel" aria-labelledby="updates-title">
-          <div class="updates-heading">
-            <div>
-              <p class="eyebrow">Announcements</p>
-              <h2 id="updates-title">Call for Papers</h2>
+                <article class="journal-news-card">
+                  <img src="./assets/update-news-board.svg" alt="Editorial news thumbnail" />
+                  <div>
+                    <p class="news-meta">Official · Editorial</p>
+                    <h3>Editorial Board and office contacts are available</h3>
+                    <p>
+                      Editorial identity, board roles, email, telephone, and office address are kept
+                      on the dedicated Editorial page and repeated in the footer directory.
+                    </p>
+                    <a class="quiet-link" href="./editorial-board.html#editorial-board">Open editorial page</a>
+                  </div>
+                </article>
+
+                <article class="journal-news-card">
+                  <img src="./assets/update-cfp-trust.svg" alt="Author center news thumbnail" />
+                  <div>
+                    <p class="news-meta">Official · Author Center</p>
+                    <h3>Submission guidance and templates are grouped for authors</h3>
+                    <p>
+                      Manuscript requirements, peer review thresholds, templates, copyright, APF, and
+                      the official submission path live on the Author Center page.
+                    </p>
+                    <a class="quiet-link" href="./author-center.html#author-guide">Open Author Center</a>
+                  </div>
+                </article>
+              </div>
             </div>
-            <a class="quiet-link" href="#articles">All calls</a>
           </div>
-          <div class="updates-grid" aria-label="Scrollable calls and news">
-            <article
-              class="update-card update-call"
-              data-category="cfp"
-              data-search="cfp call for papers trustworthy intelligent computing systems robust ai safety evaluation human centered automation deadline 30 september 2026"
-            >
-              <img src="./assets/update-cfp-trust.svg" alt="Trustworthy systems call thumbnail" />
+        </section>
+
+        <section class="all-issues-panel" id="all-issues" aria-labelledby="all-issues-title">
+          <div>
+            <p class="eyebrow">All Issues</p>
+            <h2 id="all-issues-title">Published issue archive from the current site</h2>
+          </div>
+          <div class="all-issues-grid">
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1782373895.068272.png" alt="2026 Volume 31 Number 2 cover" />
               <div>
-                <span class="update-label">CFP</span>
-                <h3>Trustworthy intelligent computing systems</h3>
-                <p>Topic: robust AI, safety evaluation, and human-centered automation.</p>
-                <strong>Deadline: 30 September 2026</strong>
+                <p class="type-label">2026</p>
+                <h3>Volume 31 Number 2</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/43">Open issue</a></p>
               </div>
             </article>
-            <article
-              class="update-card update-call"
-              data-category="cfp"
-              data-search="cfp call for papers ai agents industrial inspection empirical systems deployment evidence decision support deadline 15 november 2026"
-            >
-              <img src="./assets/update-cfp-agents.svg" alt="Industrial AI agents call thumbnail" />
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1777442119.596342.png" alt="2026 Volume 31 Number 1 cover" />
               <div>
-                <span class="update-label">CFP</span>
-                <h3>AI agents in industrial inspection</h3>
-                <p>Topic: empirical systems, deployment evidence, and decision support.</p>
-                <strong>Deadline: 15 November 2026</strong>
+                <p class="type-label">2026</p>
+                <h3>Volume 31 Number 1</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/42">Open issue</a></p>
+              </div>
+            </article>
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1773622577.494781.png" alt="2025 Volume 30 Number 4 cover" />
+              <div>
+                <p class="type-label">2025</p>
+                <h3>Volume 30 Number 4</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/41">Open issue</a></p>
+              </div>
+            </article>
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1770254754.269274.png" alt="2025 Volume 30 Number 3 cover" />
+              <div>
+                <p class="type-label">2025</p>
+                <h3>Volume 30 Number 3</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/40">Open issue</a></p>
+              </div>
+            </article>
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758609352.616588.png" alt="2025 Volume 30 Number 2 cover" />
+              <div>
+                <p class="type-label">2025</p>
+                <h3>Volume 30 Number 2</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/38">Open issue</a></p>
+              </div>
+            </article>
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758608663.372144.png" alt="2025 Volume 30 Number 1 cover" />
+              <div>
+                <p class="type-label">2025</p>
+                <h3>Volume 30 Number 1</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/17">Open issue</a></p>
+              </div>
+            </article>
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758676894.547271.png" alt="2024 Volume 29 Number 4 cover" />
+              <div>
+                <p class="type-label">2024</p>
+                <h3>Volume 29 Number 4</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/16">Open issue</a></p>
+              </div>
+            </article>
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758675748.032268.png" alt="2024 Volume 29 Number 3 cover" />
+              <div>
+                <p class="type-label">2024</p>
+                <h3>Volume 29 Number 3</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/15">Open issue</a></p>
+              </div>
+            </article>
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758622357.536022.png" alt="2024 Volume 29 Number 2 cover" />
+              <div>
+                <p class="type-label">2024</p>
+                <h3>Volume 29 Number 2</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/2">Open issue</a></p>
+              </div>
+            </article>
+            <article class="past-issue-card">
+              <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758622141.18272.png" alt="2024 Volume 29 Number 1 cover" />
+              <div>
+                <p class="type-label">2024</p>
+                <h3>Volume 29 Number 1</h3>
+                <p><a href="https://www.ijics.cn/all-issues/article/1">Open issue</a></p>
               </div>
             </article>
           </div>
-
-          <section class="journal-news-board" id="journal-news" aria-labelledby="journal-news-title">
-            <div class="journal-news-heading">
-              <p class="eyebrow">News</p>
-              <h2 id="journal-news-title">Journal updates</h2>
-            </div>
-            <div class="journal-news-list">
-              <article class="journal-news-card">
-                <img src="./assets/update-news-issue.svg" alt="Current issue news thumbnail" />
-                <div>
-                  <p class="news-meta">IJICS Editorial Office · 7 July 2026</p>
-                  <h3>Current issue metadata has been refreshed</h3>
-                  <p>
-                    Article pages now expose DOI, license, article type, issue number, and citation
-                    actions in one scanable metadata block.
-                  </p>
-                </div>
-              </article>
-              <article class="journal-news-card">
-                <img src="./assets/update-news-board.svg" alt="Editorial board news thumbnail" />
-                <div>
-                  <p class="news-meta">Mei Lin · 3 July 2026</p>
-                  <h3>Editorial board affiliations reviewed for public display</h3>
-                  <p>
-                    Board entries now separate public affiliation, role, term status, and the office
-                    contact path used for correction requests.
-                  </p>
-                </div>
-              </article>
-              <article class="journal-news-card">
-                <img src="./assets/update-cfp-trust.svg" alt="Trustworthy systems call thumbnail" />
-                <div>
-                  <p class="news-meta">Daniel Hart · 24 June 2026</p>
-                  <h3>Author guidance adds a pre-submission evidence checklist</h3>
-                  <p>
-                    The checklist records required files, ethics statements, funding disclosures,
-                    and the official submission domain before authors leave the site.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <section class="all-issues-panel" id="all-issues" aria-labelledby="all-issues-title">
-        <div>
-          <p class="eyebrow">All Issues</p>
-          <h2 id="all-issues-title">Browse all published issues</h2>
-        </div>
-        <div class="all-issues-grid">
-          <article class="past-issue-card">
-            <img src="./assets/past-issue-2026-01.svg" alt="Vol. 18 Issue 1 cover thumbnail" />
-            <div>
-              <p class="type-label">Vol. 18, Issue 1</p>
-              <h3>Intelligent control systems in open environments</h3>
-              <p>12 articles · March 2026</p>
-            </div>
-          </article>
-          <article class="past-issue-card">
-            <img src="./assets/past-issue-2025-04.svg" alt="Vol. 17 Issue 4 cover thumbnail" />
-            <div>
-              <p class="type-label">Vol. 17, Issue 4</p>
-              <h3>Human-centered automation and trusted agents</h3>
-              <p>10 articles · December 2025</p>
-            </div>
-          </article>
-          <article class="past-issue-card">
-            <img src="./assets/past-issue-2025-03.svg" alt="Vol. 17 Issue 3 cover thumbnail" />
-            <div>
-              <p class="type-label">Vol. 17, Issue 3</p>
-              <h3>Robust learning for control and decision support</h3>
-              <p>11 articles · September 2025</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
+        </section>
       </div>
     </main>
 
     <footer class="site-footer" id="contact" aria-label="Journal compliance information">
       <div class="footer-compliance">
-        <p class="eyebrow">Journal compliance information</p>
-        <nav class="footer-link-row" aria-label="Journal information links">
-          <a id="about" href="#contact">Aim &amp; Scope</a>
-          <a id="policies" href="#contact">Open Access and Policies</a>
+        <p class="eyebrow">Journal directory</p>
+        <nav class="footer-directory" aria-label="Expanded journal navigation">
+          <section class="footer-directory-group">
+            <h2>About</h2>
+            <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
+            <a href="./editorial-board.html#editorial-board">Editorial Board</a>
+            <a href="./editorial-board.html#editorial-office">Editorial Office</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Browse</h2>
+            <a href="./index.html#home">Home</a>
+            <a href="./index.html#current-issue">Current Issue</a>
+            <a href="./index.html#all-issues">All Issues</a>
+            <a href="./index.html#call-for-papers">Call for Papers</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Editor</h2>
+            <a href="./editorial-board.html#editor-in-chief">Editor-in-Chief</a>
+            <a href="./editorial-board.html#deputy-editors">Deputy Editors</a>
+            <a href="./editorial-board.html#associate-editors">Associate Editors</a>
+            <a href="./editorial-board.html#editorial-office">Editorial Office</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Author</h2>
+            <a href="./author-center.html#author-guide">Instructions for Authors</a>
+            <a href="./author-center.html#submission">Submission path</a>
+            <a href="./author-center.html#requirements">Manuscript requirements</a>
+            <a href="./author-center.html#peer-review">Peer review process</a>
+            <a href="./author-center.html#templates">Templates and copyright</a>
+            <a href="./author-center.html#apf">Article Publish Fee</a>
+            <a href="./editorial-board.html#editorial-office">Submission email</a>
+          </section>
         </nav>
         <div class="identity-strip">
           <span>The International Journal of Intelligent Control and Systems</span>
           <span>IJICS</span>
-          <span>ISSN 2040-0000</span>
-          <span>Website: ijics.example.org</span>
-          <a href="mailto:editorial@ijics.example.org">editorial@ijics.example.org</a>
+          <span>Official domain: www.ijics.cn</span>
+          <span>ISSN: to be verified before launch</span>
+          <a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a>
+          <span>Tel: 010-61943066</span>
+          <span>Room 1505, Satellite Building, No. 63 Zhichun Road, Hai Dian District, Beijing 100190, China</span>
+          <span>京ICP备18005680号-5</span>
+          <span>© 2021 IJICS. All rights reserved.</span>
         </div>
       </div>
     </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="./script.js?v=23"></script>
+    <script src="./script.js?v=27"></script>
   </body>
 </html>

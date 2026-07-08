@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Author Center · IJICS Homepage Preview</title>
+    <meta
+      name="description"
+      content="IJICS author center preview with submission path, manuscript requirements, peer review, templates, copyright, and article publish fee information."
+    />
+    <link rel="stylesheet" href="./styles.css?v=32" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="./index.html#home" aria-label="IJICS home">
+          <img
+            class="brand-logo"
+            src="./assets/ijics-logo-lockup-transparent.png"
+            width="798"
+            height="128"
+            alt="The International Journal of Intelligent Control and Systems"
+          />
+        </a>
+        <div class="header-actions">
+          <nav class="social-links" aria-label="Journal utility links">
+            <a href="./editorial-board.html#editorial-office" aria-label="Contact Editorial Office">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6.5h16v11H4z" />
+                <path d="m4 7 8 6 8-6" />
+              </svg>
+              <span class="visually-hidden">Contact</span>
+            </a>
+            <a href="https://www.ijics.cn/" aria-label="Open current IJICS website">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8" />
+                <path d="M4 12h16M12 4c2.2 2.3 3.2 5 3.2 8s-1 5.7-3.2 8M12 4c-2.2 2.3-3.2 5-3.2 8s1 5.7 3.2 8" />
+              </svg>
+              <span class="visually-hidden">Website</span>
+            </a>
+            <a href="./author-center.html#author-guide" aria-label="Author resources">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 4.5h10v15H7z" />
+                <path d="M9.5 8h5M9.5 11.5h5M9.5 15h3" />
+              </svg>
+              <span class="visually-hidden">Author resources</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="navigation-board">
+        <nav class="section-shortcuts" aria-label="Primary columns">
+          <a href="./index.html#home">Home</a>
+          <details class="nav-menu">
+            <summary>About</summary>
+            <div class="nav-menu-panel">
+              <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
+              <a href="./editorial-board.html#editorial-board">Editorial Board</a>
+              <a href="./author-center.html#apf">Article Publish Fee</a>
+              <a href="./editorial-board.html#editorial-office" data-section-link="Editors">Editorial Office</a>
+            </div>
+          </details>
+          <a href="./index.html#all-issues">All Issues</a>
+          <a class="nav-home" href="./author-center.html#author-guide">Author Center</a>
+        </nav>
+
+        <form class="nav-article-search" id="article-search" role="search">
+          <label for="articleQuery">Search articles</label>
+          <div class="nav-search-row">
+            <input
+              id="articleQuery"
+              type="search"
+              placeholder="Title, author, DOI, keyword"
+              autocomplete="off"
+            />
+            <select id="issueSelect" aria-label="Article collection">
+              <option value="">All articles</option>
+              <optgroup label="Articles">
+                <option value="current">Current Issue</option>
+                <option value="archive">Journal Archive</option>
+                <option value="popular">Popular Articles</option>
+              </optgroup>
+              <optgroup label="Journal information">
+                <option value="cfp">Call for Papers</option>
+                <option value="authors">Author Resources</option>
+              </optgroup>
+            </select>
+            <button type="submit" aria-label="Search articles">Search</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="quick-access-float" id="site-structure" aria-label="Quick Access">
+        <button
+          type="button"
+          class="quick-access-toggle"
+          id="quickAccessToggle"
+          aria-label="Collapse Quick Access"
+          aria-expanded="true"
+          aria-controls="quickAccessContent"
+          onclick="toggleQuickAccess()"
+        >
+          &gt;
+        </button>
+        <div class="quick-access-content" id="quickAccessContent">
+          <p class="eyebrow">Quick Access</p>
+          <div class="quick-access-links">
+            <button type="button" class="quick-access-link is-active" data-section-link="Authors">For Authors</button>
+            <button type="button" class="quick-access-link" data-section-link="Reviewers">For Reviewers</button>
+            <button type="button" class="quick-access-link" data-section-link="Editors">For Editors</button>
+          </div>
+          <div class="quick-access-secondary" id="quickAccessSecondary" aria-live="polite"></div>
+        </div>
+      </aside>
+
+      <div class="content-flow">
+        <section class="subpage-hero" id="author-guide">
+          <div>
+            <p class="eyebrow">Author Center</p>
+            <h1>Submission guidance, templates, fees, and copyright</h1>
+            <p>
+              This page separates author tasks from the homepage. It keeps every author-facing fact in
+              HTML text so authors, search engines, and AI retrieval systems can read the same content.
+            </p>
+          </div>
+          <nav class="subpage-jump-row" aria-label="Author center sections">
+            <a href="#submission">Submission</a>
+            <a href="#requirements">Requirements</a>
+            <a href="#peer-review">Peer review</a>
+            <a href="#templates">Templates</a>
+            <a href="#apf">APF</a>
+          </nav>
+        </section>
+
+        <section class="profile-band profile-band-paper" aria-label="Author guide">
+          <div class="guide-grid">
+            <article class="guide-card" id="submission">
+              <h2>Submission path</h2>
+              <ul class="requirements-list">
+                <li>Submit manuscripts through the IJICS online submission system.</li>
+                <li>Register and log in through the official IJICS submission login.</li>
+                <li>DOC or PDF files can be accepted; PDF files are preferred.</li>
+                <li>The submitting author should confirm the upload and complete co-author list.</li>
+                <li>The author receives an email acknowledgment and reference number after successful reception.</li>
+                <li>Review status can be inquired about by email.</li>
+              </ul>
+              <a class="action-tile" href="https://www.ijics.cn/user/login" aria-label="Open IJICS submission login">
+                <span class="tile-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M9 4.5H5.5v15H9" />
+                    <path d="M13 8l4 4-4 4" />
+                    <path d="M8.5 12H17" />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Submission login</strong>
+                  <em>Open ijics.cn/user/login</em>
+                </span>
+              </a>
+            </article>
+
+            <article class="guide-card" id="requirements">
+              <h2>Manuscript requirements</h2>
+              <ul class="requirements-list">
+                <li>Submitted manuscripts should not have been published or be under submission elsewhere without written consent.</li>
+                <li>Contributions should reflect recent developments, academic novelty, thoughtfulness, and practicability.</li>
+                <li>The manuscript should use a two-column format.</li>
+                <li>Writing should be simple and straightforward, with reliable data and no undue self-appraisal.</li>
+                <li>Low-quality manuscripts, poor English writing, or tedious quotations may be rejected without review.</li>
+              </ul>
+            </article>
+
+            <article class="guide-card" id="peer-review">
+              <h2>Peer review and screening</h2>
+              <p>
+                IJICS states that articles are peer reviewed by a minimum of two independent reviewers
+                through a single-blind review process.
+              </p>
+              <div class="threshold-grid" aria-label="Screening thresholds">
+                <div class="threshold-card">
+                  <span>Overall similarity</span>
+                  <strong>&lt; 30%</strong>
+                </div>
+                <div class="threshold-card">
+                  <span>Single-source similarity</span>
+                  <strong>&lt; 15%</strong>
+                </div>
+                <div class="threshold-card">
+                  <span>Author self-citations</span>
+                  <strong>&lt; 20%</strong>
+                </div>
+                <div class="threshold-card">
+                  <span>References from one source</span>
+                  <strong>&lt; 20%</strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="guide-card" id="templates">
+              <h2>Files and copyright</h2>
+              <div class="template-tile-grid" aria-label="Download manuscript templates">
+                <a class="template-tile" href="https://static.caa.org.cn/ijics-journal/documentation/Template.docx">
+                  <span class="tile-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M6.5 3.5h8l3 3v14h-11z" />
+                      <path d="M14.5 3.5v3h3" />
+                      <path d="M8.5 11h7M8.5 14h7M8.5 17h4" />
+                    </svg>
+                  </span>
+                  <span class="template-format">DOCX</span>
+                  <strong>Word template</strong>
+                  <span>Two-column manuscript layout</span>
+                </a>
+                <a class="template-tile" href="https://static.caa.org.cn/ijics-journal/documentation/Template.zip">
+                  <span class="tile-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M8.5 4.5 4.5 12l4 7.5" />
+                      <path d="M15.5 4.5l4 7.5-4 7.5" />
+                      <path d="M10.5 16.5l3-9" />
+                    </svg>
+                  </span>
+                  <span class="template-format">ZIP</span>
+                  <strong>LaTeX template</strong>
+                  <span>LaTeX package for IJICS submissions</span>
+                </a>
+              </div>
+              <ul class="requirements-list copyright-list">
+                <li>All authors must sign the Transfer of Copyright Agreement before publication.</li>
+                <li>Authors are responsible for permission to reproduce copyrighted figures or material.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="profile-band" id="apf" aria-label="Article publish fee">
+          <article class="profile-card fee-card">
+            <p class="eyebrow">Article Publish Fee</p>
+            <h2>No manuscript processing fee is currently charged</h2>
+            <p>
+              The current IJICS page states that the journal does not charge any fees for manuscript
+              processing. It also states that any future article publish fee will be made visible on
+              the journal website.
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="contact" aria-label="Journal compliance information">
+      <div class="footer-compliance">
+        <p class="eyebrow">Journal directory</p>
+        <nav class="footer-directory" aria-label="Expanded journal navigation">
+          <section class="footer-directory-group">
+            <h2>About</h2>
+            <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
+            <a href="./editorial-board.html#editorial-board">Editorial Board</a>
+            <a href="./editorial-board.html#editorial-office">Editorial Office</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Browse</h2>
+            <a href="./index.html#home">Home</a>
+            <a href="./index.html#current-issue">Current Issue</a>
+            <a href="./index.html#all-issues">All Issues</a>
+            <a href="./index.html#call-for-papers">Call for Papers</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Editor</h2>
+            <a href="./editorial-board.html#editor-in-chief">Editor-in-Chief</a>
+            <a href="./editorial-board.html#deputy-editors">Deputy Editors</a>
+            <a href="./editorial-board.html#associate-editors">Associate Editors</a>
+            <a href="./editorial-board.html#editorial-office">Editorial Office</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Author</h2>
+            <a href="./author-center.html#author-guide">Instructions for Authors</a>
+            <a href="./author-center.html#submission">Submission path</a>
+            <a href="./author-center.html#requirements">Manuscript requirements</a>
+            <a href="./author-center.html#peer-review">Peer review process</a>
+            <a href="./author-center.html#templates">Templates and copyright</a>
+            <a href="./author-center.html#apf">Article Publish Fee</a>
+            <a href="./editorial-board.html#editorial-office">Submission email</a>
+          </section>
+        </nav>
+        <div class="identity-strip">
+          <span>The International Journal of Intelligent Control and Systems</span>
+          <span>IJICS</span>
+          <span>Official domain: www.ijics.cn</span>
+          <span>ISSN: to be verified before launch</span>
+          <a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a>
+          <span>Tel: 010-61943066</span>
+          <span>Room 1505, Satellite Building, No. 63 Zhichun Road, Hai Dian District, Beijing 100190, China</span>
+          <span>京ICP备18005680号-5</span>
+          <span>© 2021 IJICS. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js?v=27"></script>
+  </body>
+</html>
