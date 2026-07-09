@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All Issues · IJICS Homepage Preview</title>
+    <meta
+      name="description"
+      content="IJICS issue archive preview with published volume and number records from the current journal website."
+    />
+    <link rel="stylesheet" href="./styles.css?v=41" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="./index.html#home" aria-label="IJICS home">
+          <img
+            class="brand-logo"
+            src="./assets/ijics-logo-lockup-transparent.png"
+            width="798"
+            height="128"
+            alt="The International Journal of Intelligent Control and Systems"
+          />
+        </a>
+        <nav class="section-shortcuts" aria-label="Primary columns">
+          <a href="./index.html#home">Home</a>
+          <details class="nav-menu">
+            <summary>About</summary>
+            <div class="nav-menu-panel">
+              <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
+              <a href="./editorial-board.html#editorial-board">Editorial Board</a>
+              <a href="./author-center.html#apf">Article Publish Fee</a>
+              <a href="./editorial-board.html#editorial-office" data-section-link="Editors">Editorial Office</a>
+            </div>
+          </details>
+          <a class="nav-home" href="./all-issues.html#all-issues">All Issues</a>
+        </nav>
+      </div>
+
+      <div class="navigation-board">
+        <form class="nav-article-search" id="article-search" role="search">
+          <label for="articleQuery">Search articles</label>
+          <div class="nav-search-row">
+            <input
+              id="articleQuery"
+              type="search"
+              placeholder="Title, author, DOI, keyword"
+              autocomplete="off"
+            />
+            <select id="issueSelect" aria-label="Article collection">
+              <option value="">All articles</option>
+              <optgroup label="Articles">
+                <option value="current">Current Issue</option>
+                <option value="archive">Journal Archive</option>
+                <option value="popular">Popular Articles</option>
+              </optgroup>
+              <optgroup label="Journal information">
+                <option value="cfp">Call for Papers</option>
+                <option value="authors">Author Resources</option>
+              </optgroup>
+            </select>
+            <button type="submit" aria-label="Search articles">Search</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="quick-access-float" id="site-structure" aria-label="Quick Access">
+        <button
+          type="button"
+          class="quick-access-toggle"
+          id="quickAccessToggle"
+          aria-label="Collapse Quick Access"
+          aria-expanded="true"
+          aria-controls="quickAccessContent"
+          onclick="toggleQuickAccess()"
+        >
+          &gt;
+        </button>
+        <div class="quick-access-content" id="quickAccessContent">
+          <p class="eyebrow">Quick Access</p>
+          <div class="quick-access-links">
+            <button type="button" class="quick-access-link is-active" data-section-link="Authors">For Authors</button>
+            <button type="button" class="quick-access-link" data-section-link="Reviewers">For Reviewers</button>
+            <button type="button" class="quick-access-link" data-section-link="Editors">For Editors</button>
+          </div>
+          <div class="quick-access-secondary" id="quickAccessSecondary" aria-live="polite"></div>
+        </div>
+      </aside>
+
+      <div class="content-flow">
+        <section class="all-issues-panel all-issues-page-panel" id="all-issues" aria-labelledby="all-issues-page-title">
+          <div class="issue-archive-brief">
+            <div>
+              <p class="eyebrow">All Issues</p>
+              <h1 id="all-issues-page-title">IJICS issue archive</h1>
+              <p>
+                Browse published IJICS volumes from the current public site. Select an issue to preview its cover and three
+                representative papers before opening the full issue page.
+              </p>
+            </div>
+            <dl class="issue-archive-facts" aria-label="Archive facts">
+              <div>
+                <dt>Latest issue</dt>
+                <dd>2026 Volume 31 Number 2</dd>
+              </div>
+              <div>
+                <dt>Years shown</dt>
+                <dd>2024-2026</dd>
+              </div>
+              <div>
+                <dt>Records mocked</dt>
+                <dd>10 issues</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="issue-archive-layout">
+            <article class="issue-preview-panel" aria-labelledby="all-issues-title">
+              <div class="issue-preview-cover">
+                <a
+                  class="issue-preview-cover-link"
+                  id="selectedIssueCoverLink"
+                  href="https://www.ijics.cn/all-issues/article/43"
+                  aria-label="Open 2026 Volume 31 Number 2 issue page"
+                >
+                  <img
+                    id="selectedIssueCover"
+                    src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1782373895.068272.png"
+                    alt="2026 Volume 31 Number 2 cover"
+                  />
+                </a>
+              </div>
+              <div class="issue-preview-copy">
+                <p class="eyebrow visually-hidden">All Issues</p>
+                <h1 class="visually-hidden" id="all-issues-title">Volume 31 Number 2</h1>
+                <p class="section-lede visually-hidden" id="selectedIssueMeta">
+                  2026 issue published on 2026-06-25.
+                </p>
+                <a class="quiet-link" id="selectedIssueLink" href="https://www.ijics.cn/all-issues/article/43">View all</a>
+              </div>
+              <div class="signature-paper-list" id="signaturePaperList" aria-label="Signature papers in selected issue">
+                <article class="signature-paper">
+                  <span class="signature-kind">Editorial</span>
+                  <h3>
+                    <a href="https://www.ijics.cn/article/376">Agricultural Intelligence Takes Root: Turning Plant Science into a Digital Frontier</a>
+                  </h3>
+                  <p>Mengzhen Kang, Xiujuan Wang, Marc Jaeger, Véronique Letort, Fei-Yue Wang</p>
+                </article>
+                <article class="signature-paper">
+                  <span class="signature-kind">Article</span>
+                  <h3>
+                    <a href="https://www.ijics.cn/article/322">Research on a Fine Segmentation Algorithm for 3D Point Clouds of High-Density Overlapping Cucumber Canopies in Solar Greenhouses</a>
+                  </h3>
+                  <p>Huayang Wang, Jiayuan Li, Maolin Hou, Yuntao Ma</p>
+                </article>
+                <article class="signature-paper">
+                  <span class="signature-kind">Letter</span>
+                  <h3><a href="https://www.ijics.cn/article/372">PPI: A Co-Evolution Framework for Parallel Physical Intelligence</a></h3>
+                  <p>Xinyuan Zhang, Jiaxi Liu, Siheng Yi, Hui Zhang</p>
+                </article>
+              </div>
+            </article>
+
+            <section class="issue-browser-panel" aria-label="Issue archive selector">
+              <div class="issue-browser-heading">
+                <div>
+                  <h2>Published issue archive</h2>
+                </div>
+                <div class="issue-year-filter" aria-label="Filter issues by year">
+                  <button type="button" class="issue-year-button is-active" data-issue-year="all" onclick="filterIssueYear(this)">All</button>
+                  <button type="button" class="issue-year-button" data-issue-year="2026" onclick="filterIssueYear(this)">2026</button>
+                  <button type="button" class="issue-year-button" data-issue-year="2025" onclick="filterIssueYear(this)">2025</button>
+                  <button type="button" class="issue-year-button" data-issue-year="2024" onclick="filterIssueYear(this)">2024</button>
+                </div>
+              </div>
+
+              <div class="all-issues-grid" id="issueArchiveList" aria-label="Scrollable issue archive">
+                <article
+                  class="past-issue-card issue-select-card is-selected"
+                  data-issue-card
+                  data-issue-template="issue-signatures-43"
+                  data-year="2026"
+                  data-title="Volume 31 Number 2"
+                  data-date="2026-06-25"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1782373895.068272.png"
+                  data-url="https://www.ijics.cn/all-issues/article/43"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="true" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1782373895.068272.png" alt="2026 Volume 31 Number 2 cover" />
+                    <span>
+                      <span class="type-label">2026</span>
+                      <strong>Volume 31 Number 2</strong>
+                      <small>2026-06-25</small>
+                    </span>
+                  </button>
+                </article>
+                <article
+                  class="past-issue-card issue-select-card"
+                  data-issue-card
+                  data-issue-template="issue-signatures-42"
+                  data-year="2026"
+                  data-title="Volume 31 Number 1"
+                  data-date="2026-03-31"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1777442119.596342.png"
+                  data-url="https://www.ijics.cn/all-issues/article/42"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="false" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1777442119.596342.png" alt="2026 Volume 31 Number 1 cover" />
+                    <span>
+                      <span class="type-label">2026</span>
+                      <strong>Volume 31 Number 1</strong>
+                      <small>2026-03-31</small>
+                    </span>
+                  </button>
+                </article>
+                <article
+                  class="past-issue-card issue-select-card"
+                  data-issue-card
+                  data-issue-template="issue-signatures-41"
+                  data-year="2025"
+                  data-title="Volume 30 Number 4"
+                  data-date="2025-12-20"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1773622577.494781.png"
+                  data-url="https://www.ijics.cn/all-issues/article/41"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="false" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1773622577.494781.png" alt="2025 Volume 30 Number 4 cover" />
+                    <span>
+                      <span class="type-label">2025</span>
+                      <strong>Volume 30 Number 4</strong>
+                      <small>2025-12-20</small>
+                    </span>
+                  </button>
+                </article>
+                <article
+                  class="past-issue-card issue-select-card"
+                  data-issue-card
+                  data-issue-template="issue-signatures-40"
+                  data-year="2025"
+                  data-title="Volume 30 Number 3"
+                  data-date="2025-09-20"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1770254754.269274.png"
+                  data-url="https://www.ijics.cn/all-issues/article/40"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="false" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1770254754.269274.png" alt="2025 Volume 30 Number 3 cover" />
+                    <span>
+                      <span class="type-label">2025</span>
+                      <strong>Volume 30 Number 3</strong>
+                      <small>2025-09-20</small>
+                    </span>
+                  </button>
+                </article>
+                <article
+                  class="past-issue-card issue-select-card"
+                  data-issue-card
+                  data-issue-template="issue-signatures-38"
+                  data-year="2025"
+                  data-title="Volume 30 Number 2"
+                  data-date="2025-06-20"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758609352.616588.png"
+                  data-url="https://www.ijics.cn/all-issues/article/38"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="false" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758609352.616588.png" alt="2025 Volume 30 Number 2 cover" />
+                    <span>
+                      <span class="type-label">2025</span>
+                      <strong>Volume 30 Number 2</strong>
+                      <small>2025-06-20</small>
+                    </span>
+                  </button>
+                </article>
+                <article
+                  class="past-issue-card issue-select-card"
+                  data-issue-card
+                  data-issue-template="issue-signatures-17"
+                  data-year="2025"
+                  data-title="Volume 30 Number 1"
+                  data-date="2025-03-20"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758608663.372144.png"
+                  data-url="https://www.ijics.cn/all-issues/article/17"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="false" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758608663.372144.png" alt="2025 Volume 30 Number 1 cover" />
+                    <span>
+                      <span class="type-label">2025</span>
+                      <strong>Volume 30 Number 1</strong>
+                      <small>2025-03-20</small>
+                    </span>
+                  </button>
+                </article>
+                <article
+                  class="past-issue-card issue-select-card"
+                  data-issue-card
+                  data-issue-template="issue-signatures-16"
+                  data-year="2024"
+                  data-title="Volume 29 Number 4"
+                  data-date="2024-12-20"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758676894.547271.png"
+                  data-url="https://www.ijics.cn/all-issues/article/16"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="false" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758676894.547271.png" alt="2024 Volume 29 Number 4 cover" />
+                    <span>
+                      <span class="type-label">2024</span>
+                      <strong>Volume 29 Number 4</strong>
+                      <small>2024-12-20</small>
+                    </span>
+                  </button>
+                </article>
+                <article
+                  class="past-issue-card issue-select-card"
+                  data-issue-card
+                  data-issue-template="issue-signatures-15"
+                  data-year="2024"
+                  data-title="Volume 29 Number 3"
+                  data-date="2024-09-20"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758675748.032268.png"
+                  data-url="https://www.ijics.cn/all-issues/article/15"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="false" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758675748.032268.png" alt="2024 Volume 29 Number 3 cover" />
+                    <span>
+                      <span class="type-label">2024</span>
+                      <strong>Volume 29 Number 3</strong>
+                      <small>2024-09-20</small>
+                    </span>
+                  </button>
+                </article>
+                <article
+                  class="past-issue-card issue-select-card"
+                  data-issue-card
+                  data-issue-template="issue-signatures-2"
+                  data-year="2024"
+                  data-title="Volume 29 Number 2"
+                  data-date="2024-06-20"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758622357.536022.png"
+                  data-url="https://www.ijics.cn/all-issues/article/2"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="false" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758622357.536022.png" alt="2024 Volume 29 Number 2 cover" />
+                    <span>
+                      <span class="type-label">2024</span>
+                      <strong>Volume 29 Number 2</strong>
+                      <small>2024-06-20</small>
+                    </span>
+                  </button>
+                </article>
+                <article
+                  class="past-issue-card issue-select-card"
+                  data-issue-card
+                  data-issue-template="issue-signatures-1"
+                  data-year="2024"
+                  data-title="Volume 29 Number 1"
+                  data-date="2024-03-20"
+                  data-cover="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758622141.18272.png"
+                  data-url="https://www.ijics.cn/all-issues/article/1"
+                >
+                  <button type="button" class="issue-select-button" aria-pressed="false" onclick="selectIssueFromButton(this)">
+                    <img src="https://static.cacpaper.com/ijics-journal/ijics/issue-cover/1758622141.18272.png" alt="2024 Volume 29 Number 1 cover" />
+                    <span>
+                      <span class="type-label">2024</span>
+                      <strong>Volume 29 Number 1</strong>
+                      <small>2024-03-20</small>
+                    </span>
+                  </button>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <div class="issue-signature-templates" hidden>
+            <template id="issue-signatures-43">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3>
+                  <a href="https://www.ijics.cn/article/376">Agricultural Intelligence Takes Root: Turning Plant Science into a Digital Frontier</a>
+                </h3>
+                <p>Mengzhen Kang, Xiujuan Wang, Marc Jaeger, Véronique Letort, Fei-Yue Wang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3>
+                  <a href="https://www.ijics.cn/article/322">Research on a Fine Segmentation Algorithm for 3D Point Clouds of High-Density Overlapping Cucumber Canopies in Solar Greenhouses</a>
+                </h3>
+                <p>Huayang Wang, Jiayuan Li, Maolin Hou, Yuntao Ma</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3><a href="https://www.ijics.cn/article/372">PPI: A Co-Evolution Framework for Parallel Physical Intelligence</a></h3>
+                <p>Xinyuan Zhang, Jiaxi Liu, Siheng Yi, Hui Zhang</p>
+              </article>
+            </template>
+            <template id="issue-signatures-42">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3><a href="https://www.ijics.cn/article/357">Systems Intelligence for Sustainability Industry: Reflection and Perspective</a></h3>
+                <p>Fei-Yue Wang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3><a href="https://www.ijics.cn/article/291">Evapotranspiration Prediction and Irrigation Scenario Analysis Based on Physics-XGBoost</a></h3>
+                <p>Guoqing Zhang, Miao Huang, Lili Tao, Shuping Zhang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3><a href="https://www.ijics.cn/article/336">Overview of Low-Cost Plant Phenotyping Methods for Individual Plants</a></h3>
+                <p>Zhiqing Liu, Jing Hua, Haoyu Wang, Qirun Huo</p>
+              </article>
+            </template>
+            <template id="issue-signatures-41">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3><a href="https://www.ijics.cn/article/287">Toward Third-Generation Academic Journals: Parallel Publishing for Parallel Humans with New AI</a></h3>
+                <p>Fei-Yue Wang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3><a href="https://www.ijics.cn/article/232">ESO-Based Model-Free Adaptive Heading Control for Unmanned Surface Vessels</a></h3>
+                <p>Shuaixi Li, Yongchao Liu, Ge Song</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3><a href="https://www.ijics.cn/article/238">Analysis of Electromagnetic Field of Radial Magnetic Levitation Bearings Based on Finite Element Simulation</a></h3>
+                <p>Qinglai Wei, Moxuan Ren, Long Wang, Liang Li, Yanbin Du</p>
+              </article>
+            </template>
+            <template id="issue-signatures-40">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3><a href="https://www.ijics.cn/article/272">Humanoid vs. Robotoid: The Past of the Future</a></h3>
+                <p>Fei-Yue Wang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3>
+                  <a href="https://www.ijics.cn/article/254">New AI for Diabetes Control and Management, Part I: A Survey and Perspective on LLM-Based Interpretation of Stress, Exercise, and Glucose Dynamics</a>
+                </h3>
+                <p>Adina Chotbaeva, Mengmeng Zhang, Máté Siket, Jing Wang, Levente Kovács, György Eigner, Xuanting Ding, Fei-Yue Wang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3><a href="https://www.ijics.cn/article/242">PiVLA: Vision-Language-Action Based on Parallel Intelligence</a></h3>
+                <p>Fei Lin, Tengchao Zhang, Jun Huang, Qinghua Ni, Jingwei Ge, Yonglin Tian</p>
+              </article>
+            </template>
+            <template id="issue-signatures-38">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3><a href="https://www.ijics.cn/article/230">New AI for New Human in New Society</a></h3>
+                <p>Fei-Yue Wang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3><a href="https://www.ijics.cn/article/180">Parallel Control for Continuous-Time Inverse System</a></h3>
+                <p>Xiang Cheng, Qinglai Wei</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3><a href="https://www.ijics.cn/article/179">Event-Based Optimal Control for Cooperative Adaptive Cruise Control</a></h3>
+                <p>Jingwei Lu, Qinglai Wei, Xiang Cheng</p>
+              </article>
+            </template>
+            <template id="issue-signatures-17">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3>
+                  <a href="https://www.ijics.cn/article/229">Cybernetic and Autonomous Science and Engineering for Intelligent Control: SEE&lt;sup&gt;2&lt;/sup&gt;H&lt;sub&gt;3&lt;/sub&gt;O + AIR&lt;sup&gt;2&lt;/sup&gt;IST + LaSEE&lt;sup&gt;2&lt;/sup&gt;CiSEE</a>
+                </h3>
+                <p>Fei-Yue Wang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3><a href="https://www.ijics.cn/article/163">Artificial Intelligence Generative Model in Power System Security and Stability Analysis: An Overview</a></h3>
+                <p>Yuxin Dai, Jun Zhang, Peidong Xu, Tianlu Gao, Haoran Zhang, Hao Liu, Ke Zhang, Hang Zhao, Zeyu Mu, Chenglong Xu</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3>
+                  <a href="https://www.ijics.cn/article/184">Parallel Deep Foundation Model: A Co-Evolution Framework for Analogical Imagination and Embodied Cognition of Parallel Intelligence</a>
+                </h3>
+                <p>Yonglin Tian, Fei Lin, Cong Wang, Jingwei Ge, Zhiyao Luo, Fei-Yue Wang</p>
+              </article>
+            </template>
+            <template id="issue-signatures-16">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3><a href="https://www.ijics.cn/article/131">Delay-Independent Dynamic Implementation of Optimal Control for State and Input Delayed Nonlinear Systems</a></h3>
+                <p>Shanshan Jiao, Qinglai Wei</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3><a href="https://www.ijics.cn/article/133">Data-Driven Switching Optimal Control Strategy for Aircraft Engine Acceleration Dynamics</a></h3>
+                <p>Zelin Li, Yan Shi, Shuoshuo Liu, Tao Sun, Xudong Zhao, Lijuan Liu</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3><a href="https://www.ijics.cn/article/135">A Brief Overview Study of Open Quantum System for Application in Human-Machine Interaction</a></h3>
+                <p>Shahram Payandeh</p>
+              </article>
+            </template>
+            <template id="issue-signatures-15">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3><a href="https://www.ijics.cn/article/126">Energy Maximization Absorption of Wave Energy Converter Based on Fourier Pseudo-Spectral Method and Adaptive Dynamic Programming</a></h3>
+                <p>Xinyu Bao, Zhen Chen, Ming Li</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3><a href="https://www.ijics.cn/article/127">Application of ARIS and Adaptive Filtering Algorithm in Underwater Acoustic Communication</a></h3>
+                <p>Tianrui Zhang, Shuangshuang Han, Ziyuan Yang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3><a href="https://www.ijics.cn/article/128">Intelligent Sensor Fault Detection and Isolation in Industrial System: A Data-Model Interactive Subspace Approach</a></h3>
+                <p>Shenquan Wang, Di Meng</p>
+              </article>
+            </template>
+            <template id="issue-signatures-2">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3><a href="https://www.ijics.cn/article/110">Efficient Ensemble Broad Learning System Based on Dropout and Dropconnect</a></h3>
+                <p>Yiwan Cao, Fei Chu, Shuai Li, C. L. Philip Chen, Jun Fu</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3><a href="https://www.ijics.cn/article/112">Gated Recurrent Units Based Abnormal Detection Method for Imbalanced Electricity Consumption Data</a></h3>
+                <p>Songping Meng, Chengdong Li, Wei Peng, Chenlu Tian</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3><a href="https://www.ijics.cn/article/113">Large-Scale Food Image Datasets and Food Recognition Systems: A Survey</a></h3>
+                <p>Ruizhuo Song, Wenze Chen</p>
+              </article>
+            </template>
+            <template id="issue-signatures-1">
+              <article class="signature-paper">
+                <span class="signature-kind">Editorial</span>
+                <h3><a href="https://www.ijics.cn/article/107">A Study of Methods for Predicting and Controlling Blood Glucose in Diabetic Patients</a></h3>
+                <p>Shuya Liu, Ruizhuo Song, Xiang Lu</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Article</span>
+                <h3><a href="https://www.ijics.cn/article/106">Analyzing the Stochastic Stability of Neural Networks with Semi-Markov Jump Parameters</a></h3>
+                <p>Lulu Zhang, Jiayue Sun, Huaguang Zhang</p>
+              </article>
+              <article class="signature-paper">
+                <span class="signature-kind">Letter</span>
+                <h3><a href="https://www.ijics.cn/article/105">Comprehensive Learning Particle Swarm Optimization Based on Optimal Particle Recombination</a></h3>
+                <p>Xiaobin Chen, Kezong Tang, Lihua Yang</p>
+              </article>
+            </template>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="contact" aria-label="Journal compliance information">
+      <div class="footer-compliance">
+        <p class="eyebrow">Journal directory</p>
+        <nav class="footer-directory" aria-label="Expanded journal navigation">
+          <section class="footer-directory-group">
+            <h2>About</h2>
+            <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
+            <a href="./editorial-board.html#editorial-board">Editorial Board</a>
+            <a href="./editorial-board.html#editorial-office">Editorial Office</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Browse</h2>
+            <a href="./index.html#home">Home</a>
+            <a href="./index.html#current-issue">Current Issue</a>
+            <a href="./all-issues.html#all-issues">All Issues</a>
+            <a href="./index.html#call-for-papers">Call for Papers</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Editor</h2>
+            <a href="./editorial-board.html#editor-in-chief">Editor-in-Chief</a>
+            <a href="./editorial-board.html#deputy-editors">Deputy Editors</a>
+            <a href="./editorial-board.html#associate-editors">Associate Editors</a>
+            <a href="./editorial-board.html#editorial-office">Editorial Office</a>
+          </section>
+          <section class="footer-directory-group">
+            <h2>Author</h2>
+            <a href="./author-center.html#author-guide">Instructions for Authors</a>
+            <a href="./author-center.html#submission">Submission path</a>
+            <a href="./author-center.html#requirements">Manuscript requirements</a>
+            <a href="./author-center.html#peer-review">Peer review process</a>
+            <a href="./author-center.html#templates">Templates and copyright</a>
+            <a href="./author-center.html#apf">Article Publish Fee</a>
+            <a href="./editorial-board.html#editorial-office">Submission email</a>
+          </section>
+        </nav>
+        <nav class="footer-utility-links" aria-label="Journal utility links">
+          <a href="./editorial-board.html#editorial-office">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6.5h16v11H4z" />
+              <path d="m4 7 8 6 8-6" />
+            </svg>
+            <span>Contact</span>
+          </a>
+          <a href="https://www.ijics.cn/">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="8" />
+              <path d="M4 12h16M12 4c2.2 2.3 3.2 5 3.2 8s-1 5.7-3.2 8M12 4c-2.2 2.3-3.2 5-3.2 8s1 5.7 3.2 8" />
+            </svg>
+            <span>Website</span>
+          </a>
+          <a href="./author-center.html#author-guide">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 4.5h10v15H7z" />
+              <path d="M9.5 8h5M9.5 11.5h5M9.5 15h3" />
+            </svg>
+            <span>Author resources</span>
+          </a>
+        </nav>
+        <div class="identity-strip">
+          <span>The International Journal of Intelligent Control and Systems</span>
+          <span>IJICS</span>
+          <span>Official domain: www.ijics.cn</span>
+          <span>ISSN: to be verified before launch</span>
+          <a href="mailto:ijics@caa.org.cn">ijics@caa.org.cn</a>
+          <span>Tel: 010-61943066</span>
+          <span>Room 1505, Satellite Building, No. 63 Zhichun Road, Hai Dian District, Beijing 100190, China</span>
+          <span>京ICP备18005680号-5</span>
+          <span>© 2021 IJICS. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./script.js?v=31"></script>
+  </body>
+</html>

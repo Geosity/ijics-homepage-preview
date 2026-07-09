@@ -8,7 +8,7 @@
       name="description"
       content="IJICS Aim and Scope page preview with official scope text for intelligent control, knowledge-based systems, and practical intelligent technologies."
     />
-    <link rel="stylesheet" href="./styles.css?v=32" />
+    <link rel="stylesheet" href="./styles.css?v=41" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -24,38 +24,10 @@
             alt="The International Journal of Intelligent Control and Systems"
           />
         </a>
-        <div class="header-actions">
-          <nav class="social-links" aria-label="Journal utility links">
-            <a href="./editorial-board.html#editorial-office" aria-label="Contact Editorial Office">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 6.5h16v11H4z" />
-                <path d="m4 7 8 6 8-6" />
-              </svg>
-              <span class="visually-hidden">Contact</span>
-            </a>
-            <a href="https://www.ijics.cn/" aria-label="Open current IJICS website">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="8" />
-                <path d="M4 12h16M12 4c2.2 2.3 3.2 5 3.2 8s-1 5.7-3.2 8M12 4c-2.2 2.3-3.2 5-3.2 8s1 5.7 3.2 8" />
-              </svg>
-              <span class="visually-hidden">Website</span>
-            </a>
-            <a href="./author-center.html#author-guide" aria-label="Author resources">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M7 4.5h10v15H7z" />
-                <path d="M9.5 8h5M9.5 11.5h5M9.5 15h3" />
-              </svg>
-              <span class="visually-hidden">Author resources</span>
-            </a>
-          </nav>
-        </div>
-      </div>
-
-      <div class="navigation-board">
         <nav class="section-shortcuts" aria-label="Primary columns">
           <a href="./index.html#home">Home</a>
           <details class="nav-menu">
-            <summary>About</summary>
+            <summary class="nav-home">About</summary>
             <div class="nav-menu-panel">
               <a href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
               <a href="./editorial-board.html#editorial-board">Editorial Board</a>
@@ -63,10 +35,11 @@
               <a href="./editorial-board.html#editorial-office" data-section-link="Editors">Editorial Office</a>
             </div>
           </details>
-          <a href="./index.html#all-issues">All Issues</a>
-          <a class="nav-home" href="./aim-scope.html#aim-scope">Aim &amp; Scope</a>
+          <a href="./all-issues.html#all-issues">All Issues</a>
         </nav>
+      </div>
 
+      <div class="navigation-board">
         <form class="nav-article-search" id="article-search" role="search">
           <label for="articleQuery">Search articles</label>
           <div class="nav-search-row">
@@ -194,7 +167,7 @@
             <h2>Browse</h2>
             <a href="./index.html#home">Home</a>
             <a href="./index.html#current-issue">Current Issue</a>
-            <a href="./index.html#all-issues">All Issues</a>
+            <a href="./all-issues.html#all-issues">All Issues</a>
             <a href="./index.html#call-for-papers">Call for Papers</a>
           </section>
           <section class="footer-directory-group">
@@ -215,6 +188,29 @@
             <a href="./editorial-board.html#editorial-office">Submission email</a>
           </section>
         </nav>
+        <nav class="footer-utility-links" aria-label="Journal utility links">
+          <a href="./editorial-board.html#editorial-office">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6.5h16v11H4z" />
+              <path d="m4 7 8 6 8-6" />
+            </svg>
+            <span>Contact</span>
+          </a>
+          <a href="https://www.ijics.cn/">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="8" />
+              <path d="M4 12h16M12 4c2.2 2.3 3.2 5 3.2 8s-1 5.7-3.2 8M12 4c-2.2 2.3-3.2 5-3.2 8s1 5.7 3.2 8" />
+            </svg>
+            <span>Website</span>
+          </a>
+          <a href="./author-center.html#author-guide">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 4.5h10v15H7z" />
+              <path d="M9.5 8h5M9.5 11.5h5M9.5 15h3" />
+            </svg>
+            <span>Author resources</span>
+          </a>
+        </nav>
         <div class="identity-strip">
           <span>The International Journal of Intelligent Control and Systems</span>
           <span>IJICS</span>
@@ -230,6 +226,6 @@
     </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <script src="./script.js?v=27"></script>
+    <script src="./script.js?v=31"></script>
   </body>
 </html>

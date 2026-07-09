@@ -8,6 +8,16 @@ const issueSelect = document.querySelector("#issueSelect");
 const articleTypeButtons = document.querySelectorAll("[data-article-type]");
 const articleQuery = document.querySelector("#articleQuery");
 const articleCards = Array.from(document.querySelectorAll(".article-card"));
+const issueCards = Array.from(document.querySelectorAll("[data-issue-card]"));
+const issueYearButtons = document.querySelectorAll("[data-issue-year]");
+const issueArchiveList = document.querySelector("#issueArchiveList");
+const issueYearFilter = document.querySelector(".issue-year-filter");
+const selectedIssueCover = document.querySelector("#selectedIssueCover");
+const selectedIssueCoverLink = document.querySelector("#selectedIssueCoverLink");
+const selectedIssueTitle = document.querySelector("#all-issues-title");
+const selectedIssueMeta = document.querySelector("#selectedIssueMeta");
+const selectedIssueLink = document.querySelector("#selectedIssueLink");
+const signaturePaperList = document.querySelector("#signaturePaperList");
 let activeArticleType = "all";
 let toastTimer;
 
@@ -34,7 +44,7 @@ const quickAccessMenus = {
 
 const issueTargets = {
   current: "./index.html#current-issue",
-  archive: "./index.html#all-issues",
+  archive: "./all-issues.html#all-issues",
   popular: "./index.html#articles",
   cfp: "./index.html#call-for-papers",
   authors: "./author-center.html#author-guide",
@@ -131,6 +141,8 @@ if (articleSearch) {
 }
 
 function applyArticleFilters() {
+  if (!articleCards.length) return;
+
   const query = articleQuery ? articleQuery.value.trim().toLowerCase() : "";
   let visible = 0;
   articleCards.forEach((card) => {
@@ -159,6 +171,81 @@ function setArticleType(nextType) {
 }
 
 applyArticleFilters();
+
+function selectIssueCard(card) {
+  if (!card) return;
+
+  issueCards.forEach((item) => {
+    const isSelected = item === card;
+    item.classList.toggle("is-selected", isSelected);
+    const button = item.querySelector(".issue-select-button");
+    if (button) button.setAttribute("aria-pressed", String(isSelected));
+  });
+
+  if (selectedIssueCover) {
+    selectedIssueCover.src = card.dataset.cover;
+    selectedIssueCover.alt = `${card.dataset.year} ${card.dataset.title} cover`;
+  }
+
+  if (selectedIssueCoverLink) {
+    selectedIssueCoverLink.href = card.dataset.url;
+    selectedIssueCoverLink.setAttribute("aria-label", `Open ${card.dataset.year} ${card.dataset.title} issue page`);
+  }
+
+  if (selectedIssueTitle) selectedIssueTitle.textContent = card.dataset.title;
+  if (selectedIssueMeta) {
+    selectedIssueMeta.textContent = `${card.dataset.year} issue published on ${card.dataset.date}.`;
+  }
+  if (selectedIssueLink) selectedIssueLink.href = card.dataset.url;
+
+  const template = document.getElementById(card.dataset.issueTemplate);
+  if (template && signaturePaperList) {
+    signaturePaperList.replaceChildren(template.content.cloneNode(true));
+  }
+}
+
+function selectIssueFromButton(button) {
+  const card = button ? button.closest("[data-issue-card]") : null;
+  if (!card) return;
+  selectIssueCard(card);
+  showToast(card.dataset.title);
+}
+
+function filterIssueYear(button) {
+  if (!button) return;
+
+  const year = button.dataset.issueYear;
+  issueYearButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+  issueCards.forEach((card) => {
+    card.classList.toggle("is-hidden", year !== "all" && card.dataset.year !== year);
+  });
+
+  const currentSelection = issueCards.find(
+    (card) => card.classList.contains("is-selected") && !card.classList.contains("is-hidden")
+  );
+  if (!currentSelection) {
+    selectIssueCard(issueCards.find((card) => !card.classList.contains("is-hidden")));
+  }
+}
+
+window.selectIssueFromButton = selectIssueFromButton;
+window.filterIssueYear = filterIssueYear;
+
+if (issueArchiveList) {
+  issueArchiveList.addEventListener("click", (event) => {
+    const card = event.target.closest("[data-issue-card]");
+    if (!card) return;
+    selectIssueFromButton(card.querySelector(".issue-select-button"));
+  });
+}
+
+if (issueYearFilter) {
+  issueYearFilter.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-issue-year]");
+    if (!button) return;
+    filterIssueYear(button);
+  });
+}
 
 if (issueSelect) {
   issueSelect.addEventListener("change", () => {
